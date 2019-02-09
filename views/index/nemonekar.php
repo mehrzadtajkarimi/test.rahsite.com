@@ -6,20 +6,17 @@
       </div>
     </div>
     <div class="row">
-
-      <div class="flip-box bg-transparent">
+      <div class="flip-box bg-transparent cursor-pointer">
         <div class="flip-box-inner">
-          <div class="flip-box-front d-flex justify-content-center  align-items-center ">
-            <i class="fas fa-7x fa-building p-3"></i>
-
+          <div class="flip-box-front">
+            <span class="d-flex justify-content-center"><i class="fas fa-7x fa-building p-3 "></i></span>
+            <p class="text-center font-small">وب سایت شرکتی</p>
           </div>
-          <div class="flip-box-back  d-flex justify-content-center ">
+          <div class="flip-box-back d-flex justify-content-center">
             <img src="public\image\contract_management.jpg" alt="contract_management" >
           </div>
         </div>
-
       </div>
-  <p class="text-center d-block">وب سایت شرکتی</p>
       <div id="image_zoom" class="row mb-5">
         <?php foreach ($data as $row) { ?>
           <div class="col-lg-3 col-md-6  d-flex justify-content-center mb-3">
@@ -34,13 +31,6 @@
           </div>
         <?php } ?>
       </div>
-
-
-
-
     </div>
-
   </div>
-
-
 </section>
