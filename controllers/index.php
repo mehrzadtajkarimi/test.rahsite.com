@@ -14,7 +14,7 @@ class index extends Controller
 		$number = $_POST['number'];
 	if ($number==0) {
 
-		$this->view('index/nemonekar-tab1',[],1,1);
+		$this->view( 'index/tab1',[],1,1);
 	}
 	}
 }
