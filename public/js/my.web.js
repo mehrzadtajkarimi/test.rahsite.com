@@ -65,18 +65,18 @@ $(".flipTimer").flipTimer({
 });
 ///////////////////////////////////////////////////////////////////////////
 $("#nemonekar .Type-design").click(function() {
-  $(this).find(".flip-box-front , .flip-box-back").removeClass("border border-secondary text-muted ");
+  $("#nemonekar .Type-design").find(".flip-box-front , .flip-box-back").removeClass("border border-secondary text-muted ");
   $("#Type-design-offer section").stop().fadeOut(0);
 
-  var index=$(this).index();
+  var index =$(this).index();
   var section_selected = $("#Type-design-offer section").eq(index);
 
   var url ='http://localhost/test.rahsite.com/index/tab';
   var data = {'number':index};
+
   $.post(url,data,function (msg) {
     section_selected.html(msg);
   });
-
   section_selected.stop().fadeIn(500);
   $(this).find(".flip-box-front , .flip-box-back").addClass("border border-secondary text-muted ");
 });
