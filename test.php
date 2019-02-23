@@ -9,19 +9,47 @@
 	<title>Document</title>
 </head>
 <body>
-<button type="button" name="button">
-	click
-</button>
+    <p></p>
+<?php
 
-<script type="text/javascript">
-$('button').click(function(){
-	var url='test1.php';
-	var data={'id':1};
-	$.post(url,data,function(msg){
-		alert(msg);
-	});
-})
-</script>
+class time{
+    private $hour;
+    private $min;
+    private $sce;
 
+    function __construct($h,$m,$s)
+    {
+        $this->hour=$h;
+        $this->min=$m;
+        $this->sce=$s;
+    }
+
+    function print_time(){
+        echo $this->set_time();
+      }
+
+    private function set_time(){
+        $time='';
+        if ($this->hour==0||$this->hour==12){
+            $time .=12;
+        }else{
+            $time.=$this->hour%12;
+            $time.=':'.$this->min.':'.$this->sce;
+        }
+
+            if ($this->hour>12){
+                $time.='  AM';
+            }  else{
+                 $time.='  PM';
+            }
+         return $time;
+     }
+
+
+}
+$time =new time(23,20,30);
+$time->print_time();
+
+?>
 </body>
 </html>
