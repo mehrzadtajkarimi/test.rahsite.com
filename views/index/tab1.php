@@ -1,4 +1,4 @@
-        <div id="image_zoom" class="row">
+﻿        <div id="image_zoom" class="row">
           <?php foreach ($data as $row) { ?>
             <div class="col-lg-3 col-md-6  d-flex justify-content-center  mb-3">
               <figure>
