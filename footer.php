@@ -28,7 +28,7 @@
                             </div>
                             <div class="progress  mb-1">
                                 <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="25"
-                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 40%;"><span class="title">40% <i class="fab fa-php"></i>  PHP </span>
+                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 60%;"><span class="title">60% <i class="fab fa-php"></i>  PHP </span>
                                 </div>
                             </div>
                         </div>

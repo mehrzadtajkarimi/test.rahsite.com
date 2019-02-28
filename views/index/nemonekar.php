@@ -28,7 +28,7 @@
                         <div class="flip-box-inner">
                             <div class="flip-box-front bg-light shadow">
                                 <span class="d-flex justify-content-center"><i class="fas fa-7x fa-shopping-basket p-3 "></i></span>
-                                <p class="text-center font-small">  سایت فروشگاهی</p>
+                                <p class="text-center font-small"> سایت فروشگاهی</p>
                             </div>
                             <div class="flip-box-back d-flex justify-content-center bg-light shadow">
                                 <img src="public\image\Type-design-Store.jpg" alt="contract_management">
