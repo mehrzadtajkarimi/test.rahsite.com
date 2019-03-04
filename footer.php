@@ -7,28 +7,28 @@
                         <p class="text-white text-center  p-1"> مهارت های من  <i class="far fa-check-circle  align-middle"></i> </p>
                         <div class="card-body">
                             <div class="progress  mb-3">
-                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="90"
-                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 90%;"><span class="title">90%&nbsp;<i class="fab fa-html5 "></i> HTML  </span>
+                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="95"
+                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 95%;"><span class="title">95%&nbsp;<i class="fab fa-html5 "></i> HTML  </span>
                                 </div>
                             </div>
                             <div class="progress  mb-3 ">
-                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="80"
-                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 80%;"><span class="title">80% <i class="fab fa-css3-alt "></i> CSS </span>
+                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="90"
+                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 90%;"><span class="title">90% <i class="fab fa-css3-alt "></i> CSS </span>
+                                </div>
+                            </div>
+                            <div class="progress  mb-3">
+                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="70"
+                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 70%;"><span class="title">70% <i class="fab fa-js-square"></i> jQuery </span>
                                 </div>
                             </div>
                             <div class="progress  mb-3">
                                 <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="60"
-                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 60%;"><span class="title">60% <i class="fab fa-js-square"></i> jQuery </span>
-                                </div>
-                            </div>
-                            <div class="progress  mb-3">
-                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="20"
-                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 50%;"><span class="title">50% <i class="fab fa-wordpress"></i> WordPress </span>
+                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 60%;"><span class="title">60% <i class="fab fa-wordpress"></i> WordPress </span>
                                 </div>
                             </div>
                             <div class="progress  mb-1">
-                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="25"
-                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 60%;"><span class="title">60% <i class="fab fa-php"></i>  PHP </span>
+                                <div class="progress-bar bg-gray pr-3" role="progressbar"  aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100" style="min-width: 75%;"><span class="title">75% <i class="fab fa-php"></i>  PHP </span>
                                 </div>
                             </div>
                         </div>

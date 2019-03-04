@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="public/js/OwlCarousel2-2.3.4/owl.theme.green.min.css"/>
     <link rel="stylesheet" href="public/js/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/flipTimer.css">    
+    <link rel="stylesheet" href="public/css/flipTimer.css">
 </head>
 <body>
 
@@ -28,21 +28,21 @@
 
             <ul class="nav flex-column flex-lg-row menu mr-lg-5 mt-lg-2 mb-lg-2 ">
                 <li class="nav-item active d-lg-block ">
-                    <a class="nav-link " href="#"><i class="fas fa-home d-lg-none"></i> خانه <span class="sr-only ">(current)</span>
+                    <a class="nav-link cursor-pointer" ><i class="fas fa-home d-lg-none"></i> خانه <span class="sr-only ">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item  d-lg-block ">
-                    <a class="nav-link " href="#"><i class="fab fa-creative-commons-sampling d-lg-none"></i> نمونه کار
+                    <a class="nav-link cursor-pointer" ><i class="fab fa-creative-commons-sampling d-lg-none"></i> نمونه کار
                         های من </a>
                 </li>
                 <li class="nav-item  d-lg-block ">
-                    <a class="nav-link " href="#"><i class="far fa-edit d-lg-none"></i> نوشته های من </a>
+                    <a class="nav-link cursor-pointer" ><i class="far fa-edit d-lg-none"></i> نوشته های من </a>
                 </li>
                 <li class="nav-item  d-lg-block ">
-                    <a class="nav-link " href="#"><i class="fas fa-mobile-alt d-lg-none"></i> تماس با من </a>
+                    <a class="nav-link cursor-pointer" ><i class="fas fa-mobile-alt d-lg-none"></i> تماس با من </a>
                 </li>
                 <li class="nav-item  d-lg-block">
-                    <a class="nav-link " href="#"><i class="fas fa-file-download d-lg-none"></i> دانلود رزومه من </a>
+                    <a class="nav-link cursor-pointer" ><i class="fas fa-file-download d-lg-none"></i> دانلود رزومه من </a>
                 </li>
 
             </ul>
@@ -58,11 +58,9 @@
 <!--                <h5><i class="fas fa-user "></i></h5>-->
 <!--            </a>-->
 
-            <a id="image-logo" class="position-absolute d-block " href="#" style="left: 4em; top: .2em;">
+            <a id="image-logo" class="position-absolute d-block cursor-pointer"  style="left: 4em; top: .2em;">
                 <img class=" " src="public/image/logo.svg" alt="webzad">
             </a>
         </div>
     </nav>
 </header>
-
-
