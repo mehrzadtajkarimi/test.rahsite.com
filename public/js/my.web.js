@@ -58,11 +58,6 @@ $(window).scroll(function () {
     $("#top").fadeOut(500);
   }
 });
-//////////////////////////////////////////////////////////////////////////////////////////
-$(".flipTimer").flipTimer({
-  direction:'down',
-  date:'January 31,2019 17:47:00'
-});
 ///////////////////////////////////////////////////////////////////////////
 $("#nemonekar .Type-design").click(function() {
   $("#nemonekar .Type-design").find(".flip-box-front , .flip-box-back").removeClass("border border-secondary text-muted ");

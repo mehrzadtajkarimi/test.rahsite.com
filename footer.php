@@ -51,22 +51,12 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="public/js/jquery-3.3.1.min.js"></script>
 <script src="public/js/jquery-2.1.3.min.js"></script>
-<script src="public/js/jquery.scrollme.min.js"></script>
-<script src="public/js/jquery.flipTimer.js"></script>
-<script src="public/js/jquery-ui.min.js"></script>
-<script src="public/js/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="public/js/wow.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <script src="public/js/jquery.hover3d.min.js"></script>
 <script src="public/js/typed.min.js"></script>
-<script src="public/js/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script defer src="public/js/all.js"></script>
 <script src="public/js/my.web.js"></script>
-
-<script>
-
-</script>
 </body>
 </html>

@@ -6,9 +6,9 @@ class model_index{
 	}
 	function options(){
 		$serverName='localhost';
-		$userName='root';
-		$password='';
-		$dbName='webzad';
+		$userName='rahsitec_admin';
+		$password='Mehrzad@1';
+		$dbName='rahsitec_webzad';
 		$attr=array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8');
 		$conn= new PDO('mysql:host='.$serverName.';dbname='.$dbName,$userName,$password,$attr);
 		$sql="SELECT * FROM nemonekar";
@@ -20,9 +20,9 @@ class model_index{
 	}
 	function nemonekar_company(){
 		$serverName='localhost';
-		$userName='root';
-		$password='';
-		$dbName='webzad';
+		$userName='rahsitec_admin';
+		$password='Mehrzad@1';
+		$dbName='rahsitec_webzad';
 		$attr=array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8');
 		$conn= new PDO('mysql:host='.$serverName.';dbname='.$dbName,$userName,$password,$attr);
 		$sql="SELECT * FROM nemonekar_company";
@@ -34,9 +34,9 @@ class model_index{
 	}
 	function nemonekar_person(){
 		$serverName='localhost';
-		$userName='root';
-		$password='';
-		$dbName='webzad';
+		$userName='rahsitec_admin';
+		$password='Mehrzad@1';
+		$dbName='rahsitec_webzad';
 		$attr=array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8');
 		$conn= new PDO('mysql:host='.$serverName.';dbname='.$dbName,$userName,$password,$attr);
 		$sql="SELECT * FROM nemonekar_person";
@@ -49,9 +49,9 @@ class model_index{
 
 	function nemonekar_shop(){
 		$serverName='localhost';
-		$userName='root';
-		$password='';
-		$dbName='webzad';
+		$userName='rahsitec_admin';
+		$password='Mehrzad@1';
+		$dbName='rahsitec_webzad';
 		$attr=array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8');
 		$conn= new PDO('mysql:host='.$serverName.';dbname='.$dbName,$userName,$password,$attr);
 		$sql="SELECT * FROM nemonekar_shop";

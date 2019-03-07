@@ -1,5 +1,8 @@
+ErrorDocument 404 /my404.html
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+#RewriteCond %{HTTP_HOST} !^www.webzad.ir$ [NC]
+#RewriteRule ^(.*)$ http://www.webzad.ir/$1 [L,R=301]
