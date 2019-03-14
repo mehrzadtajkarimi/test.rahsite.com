@@ -48,16 +48,7 @@
         </div>
     </div>
 </footer>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="public/js/jquery-2.1.3.min.js"></script>
-<script src="public/js/wow.min.js"></script>
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/jquery.hover3d.min.js"></script>
-<script src="public/js/typed.min.js"></script>
-<script defer src="public/js/all.js"></script>
-<script src="public/js/my.web.js"></script>
+<!-- ================================================== -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136110471-1"></script>
 <script>
@@ -68,6 +59,14 @@
     gtag('js', new Date());
     gtag('config', 'UA-136110471-1');
 </script>
+<!-- ================================================== -->
+<script src="public/js/jquery-2.1.3.min.js"></script>
+<script src="public/js/wow.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery.hover3d.min.js"></script>
+<script src="public/js/typed.min.js"></script>
+<script src="public/js/all.js"></script>
+<script src="public/js/my.web.js"></script>
 
 </body>
 </html>
