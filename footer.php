@@ -58,5 +58,16 @@
 <script src="public/js/typed.min.js"></script>
 <script defer src="public/js/all.js"></script>
 <script src="public/js/my.web.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136110471-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-136110471-1');
+</script>
+
 </body>
 </html>

@@ -4,7 +4,7 @@ $(window).scroll(function () {
     $("#nav a").css({color: "#999"});
   } else {
     $("#nav").css({backgroundColor: "transparent"});
-    $("#nav a ").css({color: "#fff"});
+    $("#nav a ").css({color: "#d8d8d8"});
   }
 });
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -75,3 +75,20 @@ $("#nemonekar .Type-design").click(function() {
   section_selected.fadeIn(500);
   $(this).find(".flip-box-front , .flip-box-back").addClass("border border-secondary text-muted ");
 });
+///////////////////////////////////////////////////////////////////////////
+$(".www").click(function () {
+  alert("ok");
+    // $("#text-categories .ajax-categories").stop().fadeOut(0);
+    //
+    // var index = $(this).index();
+    // var section_selected = $("#text-categories .ajax-categories").eq(index);
+    //
+    // var url ='http://localhost/test.rahsite.com/articles/tab';
+    // var data = {'number':index};
+    //
+    // $.post(url,data,function (msg) {
+    //     section_selected.html(msg);
+    // });
+    // section_selected.fadeIn(500);
+});
+///////////////////////////////////////////////////////////////////////////

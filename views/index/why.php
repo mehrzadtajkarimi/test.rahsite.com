@@ -3,8 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 pt-4 ">
-                    <div class="card border-0 bg-transparent wow bounceInUp" data-wow-offset="250"
-                         data-wow-duration="1s">
+                    <div class="card border-0 bg-transparent " >
                         <div class="card-body">
                             <h1 class="h4 te text-danger text-center font-small-md"> طراحی سایت - طراحی وب سایت -
                                 طراحی سایت

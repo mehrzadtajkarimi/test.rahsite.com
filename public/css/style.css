@@ -19,9 +19,6 @@ body {
   position: relative;
   transition: 0.5S cubic-bezier(.17, .84, .44, 1);
 }
-.font-small {
-  font-size: small;
-}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -62,6 +59,9 @@ body {
 }
 .display-none{
   display: none;
+}
+.list-style-type-none{
+ list-style-type: none;
 }
 /*///////////////////////////////////////////////////////////*/
 .will-change {
@@ -145,6 +145,30 @@ body {
   transition: .5s 1s;
 }
 /*///////////////////////////////////////////////////////////*/
+
+.font-small {
+  font-size: small;
+}
+
+.font-face1{
+  font-family: myfont1;
+}
+.font-face2{
+  font-family: myfont2;
+}
+.font-face3{
+  font-family: myfont3;
+}
+.font-sizs-20{
+  font-size: 2em;
+}
+.font-sizs-15{
+  font-size: 1.5em;
+}
+.font-sizs-12{
+  font-size: 1.2em;
+}
+/*///////////////////////////////////////////////////////////*/
 @font-face {
   font-family: 'myfont';
   src: url("../fonts/IRANSans-web.ttf") format("truetype"), url("../fonts/IRANSans-web.eot") format("eot"), url("../fonts/IRANSans-web.woff") format("woff"), url("../fonts/IRANSans-web.woff2") format("woff2");
@@ -161,6 +185,10 @@ body {
   font-family: 'myfont2';
   src: url("../fonts/B.Shekari.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'myfont3';
+  src: url("../fonts/phalls_khodkar.ttf") format("truetype");
+}
 /*///////////////////////////////////////////////////////////*/
 #header-index #nav {
   -webkit-transition: .3s ease;
@@ -172,7 +200,7 @@ body {
   will-change: transform;
 }
 #header-index #nav a {
-  color: #fff;
+  color: #d8d8d8;
 }
 #header-index #nav #burger {
   outline: none;
@@ -380,8 +408,22 @@ body {
 #nemonekar .flip-box-back {
   transform: rotateY(180deg);
 }
+/*///////////////////////////////////////////////////////////*/
+#articles #widget-categories ul li a span::before{
+  content: '';
+  position: absolute;
+  right: 9px;
+  opacity: .5;
+  background-color: aqua;
+  border-radius: 50%;
+  padding: 15px;
 
 
+}
+#articles #widget-categories ul li a span{
+line-height: 30px;
+  margin-left: 20px;
+}
 /*///////////////////////////////////////////////////////////*/
 /*مانیتور های کوچیکتر از 992*/
 @media only screen and (max-width: 992px) {
