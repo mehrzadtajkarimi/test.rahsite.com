@@ -1,3 +1,6 @@
+<?php
+$option= Model::getOption();
+?>
 <footer id="progress" class="bg-dark p-3 ">
     <div class="container-fluid">
         <div class="container">
@@ -33,6 +36,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="w-75 m-auto">
+                        <a class="a text-info d-block text-center" href="mailto:mehrzadtajkarimi@gmail.com">
+                            <?= $option['email']  ?>
+                        </a>
+                    </div>
+
                 </div>
                 <div class="col-md-4 d-flex">
                     <img src="public/image/mehrzad.png" alt="mehrzad" class="img-fluid d-block m-auto align-self-center">

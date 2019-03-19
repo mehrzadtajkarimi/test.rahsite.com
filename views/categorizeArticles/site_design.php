@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <img src="public\image\<?= $row['image']; ?>" class="img-fluid "
+            <img src="public\image\<?= $row['image_small']; ?>" class="img-fluid "
                  alt="site-design-2"
                  title="site-design-2">
         </div>
