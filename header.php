@@ -45,7 +45,7 @@
                         های من </a>
                 </li>
                 <li class="nav-item  d-lg-block ">
-                    <a class="nav-link cursor-pointer" href="CategorizeArticles"><i class="far fa-edit d-lg-none"></i> نوشته های
+                    <a class="nav-link cursor-pointer" href="<?=URL?>categorizeArticles"><i class="far fa-edit d-lg-none"></i> نوشته های
                         من </a>
                 </li>
                 <li class="nav-item  d-lg-block ">

@@ -63,6 +63,12 @@ body {
 .list-style-type-none{
  list-style-type: none;
 }
+.line-height-2{
+  line-height:2em ;
+}
+.line-height-3{
+  line-height:3em ;
+}
 /*///////////////////////////////////////////////////////////*/
 .will-change {
   will-change: transform;

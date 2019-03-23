@@ -1,5 +1,6 @@
 <base href="<?= URL ?>">
 
+
 <section id="articles">
     <div class="container mt-5 ">
         <div class="row">

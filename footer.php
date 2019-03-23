@@ -1,6 +1,10 @@
 <?php
 $option= Model::getOption();
 ?>
+
+<div id="top">
+    <i class="fas fa-2x fa-angle-up bg-white text-muted"></i>
+</div>
 <footer id="progress" class="bg-dark p-3 ">
     <div class="container-fluid">
         <div class="container">

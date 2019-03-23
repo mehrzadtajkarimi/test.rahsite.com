@@ -6,7 +6,7 @@ class index extends Controller
 		//		echo 'salam';
 	}
 	function index() {
-		$result= $this->model->options();
+		$result= $this->model;
 		$this->view( 'index/index',$result );
 	}
 	function tab()
