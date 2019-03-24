@@ -70,6 +70,232 @@ body {
   line-height:3em ;
 }
 /*///////////////////////////////////////////////////////////*/
+/***************************************************************************/
+/*  */
+/* Blog data */
+/*  */
+.blog-date .date {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    color: #fff;
+    background: transparent;
+    vertical-align: middle;
+    border-width: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+	float: left;
+}
+
+    .blog-date .date:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        background: #B8E600;
+    }
+
+    .blog-date .date .date-cont {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+        .blog-date .date .date-cont > span {
+            text-align: center;
+            display: block;
+            min-width: 58px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            height: 40px;
+            line-height: 40px;
+            font-size: 24px;
+        }
+
+            .blog-date .date .date-cont > span.month,
+            .blog-date .date .date-cont > span.year {
+                font-size: 14px;
+            }
+
+        .blog-date .date .date-cont > span {
+            min-width: 55px;
+        }
+
+.small .blog-date .date .date-cont > span {
+    min-width: 35px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+    .small .blog-date .date .date-cont > span.month, .small .blog-date .date .date-cont > span.year {
+        font-size: 14px;
+    }
+
+.blog-date .date:hover .month {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.blog-date .date .month:before {
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.blog-date .date .month:before, .item .date .month:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+
+.blog-date .date:hover .month:before {
+    opacity: 0;
+}
+
+.blog-date .date:hover .month:before {
+    opacity: 1;
+}
+
+.blog-date .date .month {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    transform: rotateX(0);
+    color: #B8E600;
+}
+
+.blog-date .date .month {
+    background: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    overflow: visible;
+}
+
+    .blog-date .date .month > span {
+        display: block;
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+        transform: rotateX(0);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+.blog-date .date:hover .month > span {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.blog-date .date .month {
+    color: #B8E600;
+}
+
+    .blog-date .date .month:after {
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        z-index: -2;
+    }
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .col-md-4 .blog-item .blog-item-foot {
+        text-align: center;
+    }
+
+        .col-md-4 .blog-item .blog-item-foot .cws-button {
+            margin-top: 10px;
+            float: none !important;
+        }
+}
+
+@media screen and (max-width: 380px) {
+    .blog-item .blog-item-foot {
+        text-align: center;
+    }
+
+        .blog-item .blog-item-foot .cws-button {
+            margin-top: 10px;
+            float: none !important;
+        }
+}
+
+/*  */
+/* Blockquote */
+/*  */
+/***************************************************************************/
+
 .will-change {
   will-change: transform;
 }
@@ -418,9 +644,9 @@ body {
 #articles #widget-categories ul li a span::before{
   content: '';
   position: absolute;
-  right: 9px;
+  right: 8px;
   opacity: .5;
-  background-color: aqua;
+  background-color: #DB6E00;
   border-radius: 50%;
   padding: 15px;
 

@@ -21,7 +21,7 @@
                          data-wow-delay="1s" data-wow-duration="3.5s">
                 </div>
                 <div class="d-flex justify-content-center align-items-center h-50 text-white">
-                    <h4 id="typing" class="flex-column text-shadow "></h4>
+                    <h4 id="typing-big-banner" class="flex-column text-shadow "></h4>
                 </div>
             </div>
         </div>

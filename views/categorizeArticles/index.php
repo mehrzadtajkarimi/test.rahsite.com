@@ -9,16 +9,10 @@
                 <p class="font-face3 font-sizs-15  d-inline pr-3 text-dark">دسته بندی مقالات</p>
                 <ul class="mt-2">
                     <li class="p-1 list-style-type-none cursor-pointer ww"><a
-                                class="text-dark font-small"><span>3</span> طراحی سایت</a>
+                                class="text-dark font-small"><span>1</span> طراحی سایت</a>
                     </li>
                     <li class="p-1 list-style-type-none cursor-pointer">
                         <a class="text-dark font-small"><span>0</span>بهینه سازی سایت</a></li>
-                    <li class="p-1 list-style-type-none cursor-pointer">
-                        <a class="text-dark font-small"><span>0</span>سایت</a>
-                    </li>
-                    <li class="p-1 list-style-type-none cursor-pointer">
-                        <a class="text-dark font-small" ><span>0</span>سایت</a>
-                    </li>
                 </ul>
             </div>
             <div id="text-categories" class="col-md-9 pt-4">

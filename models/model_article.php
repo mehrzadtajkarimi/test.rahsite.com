@@ -24,5 +24,24 @@ class model_article extends Model
         $result=$this->doSelect($sql);
         return $result;
     }
+    function mostView(){
+        $sql="select * from tbl_option where setting='mostView' ";
+        $result=$this->doSelect($sql,[],1);
+        $limit_article=$result['value'];
+        $sql="select * from tbl_attribute order by viewd desc limit ".$limit_article."  ";
+        $result=$this->doSelect($sql);
+        return $result;
+
+    }
+
+    function newArticle(){
+        $sql="select * from tbl_option where setting='newArticle' ";
+        $result=$this->doSelect($sql,[],1);
+        $limit_article=$result['value'];
+        $sql="select * from tbl_attribute order by id desc limit ".$limit_article."  ";
+        $result=$this->doSelect($sql);
+        return $result;
+
+    }
 
 }

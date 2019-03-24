@@ -3,7 +3,7 @@ class Controller
 {
 	function __construct() {
 	}
-	function view( $viewUrl, $data=[],$noIncludeHeader='',$noIncludeFooter='' ) {
+	function view( $viewUrl,$data=[],$noIncludeHeader='',$noIncludeFooter='' ) {
 		if ($noIncludeHeader=='') {
 			require( 'header.php' );
 		}

@@ -39,8 +39,9 @@ wow = new WOW(
 )
 wow.init();
 //////////////////////////////////////////////////////////////////////////////////////////
+
 $(document).ready(function () {
-    var typed = new Typed("#typing", {
+    var typed = new Typed("#typing-big-banner",{
         strings: [
             "طراحی وب سایت   مطابق با استاندارد های جهانی"
         ],
@@ -48,7 +49,13 @@ $(document).ready(function () {
         startDelay: 4000,
         showCursor: false
     });
+
+
+
 });
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 $("#top").click(function () {
@@ -85,10 +92,10 @@ $("#articles #widget-categories ul li").click(function () {
     var index = $(this).index();
     var section_selected = $("#text-categories .ajax-categories").eq(index);
 
-    var url ='http://localhost/test.rahsite.com/categorizeArticles/tab_categorizeArticles';
-    var data = {'number':index};
+    var url = 'http://localhost/test.rahsite.com/categorizeArticles/tab_categorizeArticles';
+    var data = {'number': index};
 
-    $.post(url,data,function (msg) {
+    $.post(url, data, function (msg) {
         section_selected.html(msg);
     });
     section_selected.fadeIn(500);
