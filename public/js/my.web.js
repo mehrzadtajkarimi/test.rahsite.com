@@ -49,9 +49,6 @@ $(document).ready(function () {
         startDelay: 4000,
         showCursor: false
     });
-
-
-
 });
 
 
@@ -92,7 +89,7 @@ $("#articles #widget-categories ul li").click(function () {
     var index = $(this).index();
     var section_selected = $("#text-categories .ajax-categories").eq(index);
 
-    var url = 'http://localhost/test.rahsite.com/categorizeArticles/tab_categorizeArticles';
+    var url = 'http://localhost/test.rahsite.com/categorizeArticles/tab';
     var data = {'number': index};
 
     $.post(url, data, function (msg) {

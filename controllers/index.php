@@ -1,7 +1,7 @@
 <?php
 class index extends Controller
 {
-	public $var1 = 'click site';
+
 	function __construct() {
 		//		echo 'salam';
 	}

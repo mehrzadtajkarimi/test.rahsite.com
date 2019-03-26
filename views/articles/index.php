@@ -25,7 +25,7 @@ $newArticle=$data['newArticle'];
                         </h2>
                         <div class="card-img text-center">
                             <img src="<?= URL ?>public/image/<?= $row['image_small']; ?>"
-                                 alt="<?= $row['image_small']; ?>">
+                                 alt="<?= $row['image_small']; ?>" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <div class="card-text text-justify line-height-2">

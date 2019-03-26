@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
     <meta name="description"
-          content="	درباره من:اینجانب مهرزاد تاج کریمی دانش آموخته درمجتمع فنی تهران درزمینه طراحی و برنامه نویسی وب سایت فعالیت میکنم.بسیار پر انرژی تو زمینه کاری خودم ،چون عاشق کارم هستم.">
+          content="درباره من:اینجانب مهرزاد تاج کریمی دانش آموخته درمجتمع فنی تهران درزمینه طراحی و برنامه نویسی وب سایت فعالیت میکنم.">
     <meta name="author" content="tajkarimi">
     <meta name="keywords" content="وب سایت شخصی , وب زاد , طراحی سایت , درباره من ,مهرزاد تاج کریمی , برنامه نویسی"/>
     <meta property="og:title" content="وب سایت شخصی مهرزاد تاج کریمی"/>
@@ -17,13 +17,7 @@
     <link rel="icon" href="public/image/icon.png" type="image/png">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/animate.css">
-    <link rel="stylesheet" href="public/css/jquery-ui.css">
-    <link rel="stylesheet" href="public/js/OwlCarousel2-2.3.4/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="public/js/OwlCarousel2-2.3.4/owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="public/js/OwlCarousel2-2.3.4/owl.theme.green.min.css"/>
-    <link rel="stylesheet" href="public/js/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/flipTimer.css">
 
 </head>
 <body>
@@ -70,7 +64,7 @@
             <!--                <h5><i class="fas fa-user "></i></h5>-->
             <!--            </a>-->
 
-            <a id="image-logo" class="position-absolute d-block cursor-pointer" style="left: 4em; top: .2em;">
+            <a id="image-logo" href="index.php" class="position-absolute d-block cursor-pointer" style="left: 4em; top: .2em;">
                 <img class=" " src="public/image/logo.svg" alt="webzad">
             </a>
         </div>
