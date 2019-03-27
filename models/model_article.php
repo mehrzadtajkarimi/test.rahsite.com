@@ -43,5 +43,17 @@ class model_article extends Model
         return $result;
 
     }
+    function comment_parameter($id){
+        $sql="select * from tbl_comment_parameter where idcategory=?";
+        $data=[$id];
+        $result=$this->doSelect($sql,$data);
+        return $result;
+    }
+    function comment($id){
+        $sql="select * from tbl_comment where id=?";
+        $data=[$id];
+        $result=$this->doSelect($sql,$data);
+        return $result;
+    }
 
 }
