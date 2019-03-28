@@ -1,3 +1,3 @@
 <?php
 
-define('URL','http://localhost/test.rahsite.com/');
+define('URL','http://localhost/webzad.ir/');

@@ -73,7 +73,7 @@ $("#nemonekar .Type-design").click(function () {
     var index = $(this).index();
     var section_selected = $("#Type-design-offer section").eq(index);
 
-    var url = 'http://localhost/test.rahsite.com/index/tab';
+    var url = 'http://localhost/webzad.ir/index/tab';
     var data = {'number': index};
 
     $.post(url, data, function (msg) {
@@ -89,7 +89,7 @@ $("#articles #widget-categories ul li").click(function () {
     var index = $(this).index();
     var section_selected = $("#text-categories .ajax-categories").eq(index);
 
-    var url = 'http://localhost/test.rahsite.com/categorizeArticles/tab';
+    var url = 'http://localhost/webzad.ir/categorizeArticles/tab';
     var data = {'number': index};
 
     $.post(url, data, function (msg) {
