@@ -134,7 +134,7 @@ $comments = $data['comments'];
                 <div class="row">
                     <div class="col-lg-6 ">
                         <span class="d-inline d-lg-block  p-2 ">اسم شخص</span>
-                        <span class="pr-2">2019/10/22</span>
+                        <span class="pr-2"><?= $comment['date']; ?></span>
                     </div>
                     <div class="col-lg-6 m-auto ">
                         <p class="float-right p-2">آیا این نظر مفید بود ؟</p>

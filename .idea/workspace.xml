@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b73433-e42f-4ab5-b6f6-73c635009741" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_article.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/articles/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/articles/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +14,7 @@
     <session id="-1480703718">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.44" value="1" />
@@ -56,7 +54,7 @@
           <entry key="htaccess" value="1" />
           <entry key="html" value="5" />
           <entry key="js" value="220" />
-          <entry key="php" value="6122" />
+          <entry key="php" value="6137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -64,7 +62,7 @@
           <entry key="CSS" value="256" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="220" />
-          <entry key="PHP" value="6122" />
+          <entry key="PHP" value="6137" />
           <entry key="PLAIN_TEXT" value="51" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -94,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/articles/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+            <state relative-caret-position="154">
+              <caret line="136" column="64" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="64" />
               <folding>
                 <element signature="n#section#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" />
@@ -288,12 +286,12 @@
       <workItem from="1552558422210" duration="575000" />
       <workItem from="1552560434145" duration="14310000" />
       <workItem from="1552992820349" duration="7448000" />
-      <workItem from="1553065286052" duration="90660000" />
+      <workItem from="1553065286052" duration="91056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137517000" />
+    <option name="totallyTimeSpent" value="137913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -555,8 +553,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/articles/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        <state relative-caret-position="154">
+          <caret line="136" column="64" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="64" />
           <folding>
             <element signature="n#section#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" />
