@@ -73,11 +73,9 @@ $option= Model::getOption();
     gtag('config', 'UA-136110471-1');
 </script>
 <!-- ================================================== -->
-<script src="public/js/jquery-2.1.3.min.js"></script>
 <script src="public/js/wow.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <script src="public/js/jquery.hover3d.min.js"></script>
-<script src="public/js/typed.min.js"></script>
 <script src="public/js/all.js"></script>
 <script src="public/js/my.web.js"></script>
 

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/animate.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/jquery-2.1.3.min.js"></script>
+    <script src="public/js/typed.min.js"></script>
 
 </head>
 <body>

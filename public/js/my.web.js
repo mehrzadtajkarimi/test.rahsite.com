@@ -40,21 +40,6 @@ wow = new WOW(
 wow.init();
 //////////////////////////////////////////////////////////////////////////////////////////
 
-$(document).ready(function () {
-    var typed = new Typed("#typing-big-banner",{
-        strings: [
-            "طراحی وب سایت   مطابق با استاندارد های جهانی"
-        ],
-        typeSpeed: 60,
-        startDelay: 4000,
-        showCursor: false
-    });
-});
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////
 $("#top").click(function () {
     $("html,body").animate({scrollTop: 0}, 500);
 });
@@ -66,35 +51,9 @@ $(window).scroll(function () {
     }
 });
 ///////////////////////////////////////////////////////////////////////////
-$("#nemonekar .Type-design").click(function () {
-    $("#nemonekar .Type-design").find(".flip-box-front , .flip-box-back").removeClass("border border-secondary text-muted ");
-    $("#Type-design-offer section").stop().fadeOut(0);
 
-    var index = $(this).index();
-    var section_selected = $("#Type-design-offer section").eq(index);
 
-    var url = 'http://localhost/webzad.ir/index/tab';
-    var data = {'number': index};
-
-    $.post(url, data, function (msg) {
-        section_selected.html(msg);
-    });
-    section_selected.fadeIn(500);
-    $(this).find(".flip-box-front , .flip-box-back").addClass("border border-secondary text-muted ");
-});
 ///////////////////////////////////////////////////////////////////////////
-$("#articles #widget-categories ul li").click(function () {
-    $("#text-categories .ajax-categories").stop().fadeOut(0);
 
-    var index = $(this).index();
-    var section_selected = $("#text-categories .ajax-categories").eq(index);
 
-    var url = 'http://localhost/webzad.ir/categorizeArticles/tab';
-    var data = {'number': index};
-
-    $.post(url, data, function (msg) {
-        section_selected.html(msg);
-    });
-    section_selected.fadeIn(500);
-});
 ///////////////////////////////////////////////////////////////////////////

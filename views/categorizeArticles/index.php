@@ -1,5 +1,3 @@
-
-
 <section id="articles">
     <div class="container mt-5 ">
         <div class="row">
@@ -27,3 +25,20 @@
         </div>
     </div>
 </section>
+<script type="text/javascript">
+$("#articles #widget-categories ul li").click(function () {
+    $("#text-categories .ajax-categories").stop().fadeOut(0);
+
+    var index = $(this).index();
+    var section_selected = $("#text-categories .ajax-categories").eq(index);
+
+    var url = '<?= URL?>categorizeArticles/tab';
+    var data = {'number': index};
+
+    $.post(url, data, function (msg) {
+        section_selected.html(msg);
+    });
+    section_selected.fadeIn(500);
+  });
+
+</script>

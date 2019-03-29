@@ -27,3 +27,17 @@
         </div>
     </div>
 </section>
+<script type="text/javascript">
+$(document).ready(function () {
+    var typed = new Typed("#typing-big-banner",{
+        strings: [
+            "طراحی وب سایت   مطابق با استاندارد های جهانی"
+        ],
+        typeSpeed: 60,
+        startDelay: 4000,
+        showCursor: false
+    });
+  });
+
+
+</script>

@@ -104,8 +104,6 @@ $comments = $data['comments'];
                     </div>
                     <div class="card-body">
                         <?php foreach ($idCategory as $row) { ?>
-
-
                             <p><?= $row['title']; ?></p>
                             <div class="progress">
                                 <div class="progress-bar bg-gray" role="progressbar" style="width: 25%;"
@@ -161,7 +159,6 @@ $comments = $data['comments'];
                             </div>
                         </div>
                     <?php } ?>
-
                 </div>
                 <div class="col-lg-8 card bg-light mt-3">
                     <div class="card-title pt-3">
@@ -172,12 +169,7 @@ $comments = $data['comments'];
                     </div>
                 </div>
             </div>
-
         </div>
         <?php } ?>
     </div>
-
 </div>
-
-
-
