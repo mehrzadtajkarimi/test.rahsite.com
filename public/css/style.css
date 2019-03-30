@@ -311,8 +311,6 @@ body {
     transition-delay: 0.5s, 1s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    -webkit-transform-style: linear;
-    transform-style: linear;
 }
 .aa:hover::before {
     -webkit-transition-delay: 0s, 0.5s;
@@ -657,6 +655,16 @@ body {
 #articles #widget-categories ul li a span{
     line-height: 30px;
     margin-left: 20px;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+#article .score li{
+    width:40px;
+    height: 10px;
+    background-color: #eee;
+    float: right;
+    border: 1px solid white;
 }
 /*///////////////////////////////////////////////////////////*/
 /*مانیتور های کوچیکتر از 992*/
