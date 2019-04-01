@@ -1,5 +1,5 @@
 <?php
-	class categorizeArticles extends Controller {
+	class articlesCategorize extends Controller {
 		function __construct() {
 
 		}
@@ -7,7 +7,7 @@
             $result = $this->model;
 
             $data=['result'=>$result];
-			$this->view('categorizeArticles/index',$data);
+			$this->view('articlesCategorize/index',$data);
 		}
         function tab()
         {
@@ -15,12 +15,12 @@
             if ($number==0) {
                 $articles= $this->model->category();
                 $time_logs= $this->model->timeLogs();
-                $data=['article'=>$articles,'timeLogs'=>$time_logs];
-                $this->view( 'categorizeArticles/site_design',$data,1,1);
+                $data=['articles'=>$articles,'timeLogs'=>$time_logs];
+                $this->view( 'articlesCategorize/site_design',$data,1,1);
             }
             if ($number==1) {
                 $articles= $this->model->category();
-                $this->view( 'categorizeArticles/optimizing_site',$articles,1,1);
+                $this->view( 'articlesCategorize/optimizing_site',$articles,1,1);
             }
         }
     }

@@ -1,9 +1,9 @@
 <?php
 $article = $data['article'];
-$categorizeArticles = $data['categorizeArticles'];
+$articlesCategorize = $data['articlesCategorize'];
 $mostView = $data['mostView'];
 $newArticle = $data['newArticle'];
-$idCategory = $data['idCategory'];
+$commentCategory = $data['commentCategory'];
 $comments = $data['comments'];
 ?>
 <div id="article" class="container mt-5">
@@ -38,7 +38,9 @@ $comments = $data['comments'];
                 </div>
             </section>
         <?php } ?>
-        <?= require_once('leftSidebar.php'); ?>
+        <?php require('leftSidebar.php'); ?>
     </div>
-    <?= require_once('comment.php'); ?>
+
+    <?php require('comment_average.php'); ?>
+    <?php require('comment.php'); ?>
 </div>

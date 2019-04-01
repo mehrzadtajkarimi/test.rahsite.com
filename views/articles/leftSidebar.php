@@ -4,7 +4,7 @@
         </strong>
         <hr>
         <ul class=" pt-3">
-            <?php foreach ($categorizeArticles as $row) { ?>
+            <?php foreach ($articlesCategorize as $row) { ?>
                 <ol>
                     <a href="<?= URL ?>article/index/<?= $row['id']; ?>"
                        class="text-muted nav-link a text-center d-flex justify-content-center ">

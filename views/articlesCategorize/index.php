@@ -32,7 +32,7 @@ $("#articles #widget-categories ul li").click(function () {
     var index = $(this).index();
     var section_selected = $("#text-categories .ajax-categories").eq(index);
 
-    var url = '<?= URL?>categorizeArticles/tab';
+    var url = '<?= URL?>articlesCategorize/tab';
     var data = {'number': index};
 
     $.post(url, data, function (msg) {

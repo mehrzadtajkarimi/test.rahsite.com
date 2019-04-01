@@ -5,15 +5,15 @@ class article extends Controller
     {
 
     }
-    function index($id){
+    function index($id,$idCategorize){
 
         $article=$this->model->articleInfo($id);
-        $categorizeArticles=$this->model->categorizeArticles();
+        $articlesCategorize=$this->model->articlesCategorize();
         $mostView=$this->model->mostView();
         $newArticle=$this->model->newArticle();
-        $idCategory=$this->model->comment_parameter($id);
+        $commentCategory=$this->model->commentCategory($idCategorize);
         $comments=$this->model->comment($id);
-        $data=['article'=>$article,'categorizeArticles'=>$categorizeArticles,'mostView'=>$mostView,'newArticle'=>$newArticle,'idCategory'=>$idCategory,'comments'=>$comments];
+        $data=['article'=>$article, 'articlesCategorize' =>$articlesCategorize,'mostView'=>$mostView,'newArticle'=>$newArticle,'commentCategory'=>$commentCategory,'comments'=>$comments];
         $this->view('articles/index',$data);
 
     }
