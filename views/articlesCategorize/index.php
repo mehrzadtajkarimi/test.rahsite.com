@@ -1,8 +1,6 @@
 <?php
 
 $articles = $data['articles'];
-
-
 ?>
 <section id="articles">
     <div class="container mt-5 ">
