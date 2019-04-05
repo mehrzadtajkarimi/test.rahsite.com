@@ -7,7 +7,7 @@
                          data-wow-offset="250">
                         <div class="card-body">
                             <div class="card-img">
-                                <img src="public\image\programming.svg" alt="programming"
+                                <img src="public/image/programming.svg" alt="programming"
                                      class="img-fluid w-50 d-block m-auto ">
                             </div>
                             <div class="card-text mt-4">
@@ -22,7 +22,7 @@
                          data-wow-offset="250">
                         <div class="card-body">
                             <div class="card-img">
-                                <img src="public\image\engine.svg" alt="website"
+                                <img src="public/image/engine.svg" alt="website"
                                      class="img-fluid w-50 d-block m-auto ">
                             </div>
                             <div class="card-text mt-4">
@@ -40,7 +40,7 @@
                          data-wow-offset="250">
                         <div class="card-body ">
                             <div class="card-img">
-                                <img src="public\image\responsive.svg" alt="programming"
+                                <img src="public/image/responsive.svg" alt="programming"
                                      class="img-fluid w-50 d-block m-auto ">
                             </div>
                             <div class="card-text mt-4">
@@ -58,7 +58,7 @@
                          data-wow-offset="250">
                         <div class="card-body ">
                             <div class="card-img">
-                                <img src="public\image\timer.svg" alt="programming"
+                                <img src="public/image/timer.svg" alt="programming"
                                      class="img-fluid w-50 d-block m-auto ">
                             </div>
                             <div class="card-text mt-4">

@@ -7,19 +7,20 @@ class model_articlesCategorize extends Model
         parent::__construct();
     }
 
-    function category()
+    function articles()
     {
-        $sql = "select * from tbl_option where setting='limit_articlesCategorize'";
+        $sql = "SELECT * FROM tbl_option WHERE setting='limit_articlesCategorize'";
         $result=$this->doSelect($sql,[],1);
         $limit_articlesCategorize = $result['value'];
         $sql = "SELECT * FROM tbl_articles limit ".$limit_articlesCategorize." ";
         $result=$this->doSelect($sql);
-        return $result;
-
+                return $result;
     }
+
+
     function timeLogs()
     {
-        $sql = "select * from tbl_articles ";
+        $sql = "SELECT * FROM tbl_articles ";
         $result=$this->doSelect($sql,[],1);
         $time_logs=$result['time_logs'];
 //      date_default_timezone_set('Asia/Tehran');

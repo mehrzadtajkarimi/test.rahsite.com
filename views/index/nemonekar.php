@@ -16,7 +16,7 @@
                                 <p class="text-center font-small"> سایت شرکتی</p>
                             </div>
                             <div  class="flip-box-back d-flex justify-content-center bg-light shadow">
-                                <img  src="public\image\Type-design-company.jpg" alt="contract_management">
+                                <img  src="public/image/Type-design-company.jpg" alt="contract_management">
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                                 <p class="text-center font-small"> سایت فروشگاهی</p>
                             </div>
                             <div class="flip-box-back d-flex justify-content-center bg-light shadow">
-                                <img src="public\image\Type-design-store.jpg" alt="contract_management">
+                                <img src="public/image/Type-design-store.jpg" alt="contract_management">
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                                 <p class="text-center font-small">سایت شخصی</p>
                             </div>
                             <div class="flip-box-back d-flex justify-content-center bg-light shadow">
-                                <img src="public\image\Type-design-personal.jpg" alt="contract_management">
+                                <img src="public/image/Type-design-personal.jpg" alt="contract_management">
                             </div>
                         </div>
                     </div>
