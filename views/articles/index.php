@@ -3,7 +3,8 @@ $article = $data['article'];
 $articlesCategorize = $data['articlesCategorize'];
 $mostView = $data['mostView'];
 $newArticle = $data['newArticle'];
-$commentCategory = $data['commentCategory'];
+$commentParameterName = $data['commentParameterName'];
+$commentParameterScores = $data['commentParameterScores'];
 $comments = $data['comments'];
 ?>
 <div id="article" class="container mt-5">

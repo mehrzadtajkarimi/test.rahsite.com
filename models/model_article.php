@@ -1,59 +1,77 @@
 <?php
 
-class model_article extends Model
-{
-    function __construct()
-    {
-        parent::__construct();
-    }
+class model_article extends Model {
 
-    function articleInfo($id)
-    {
-        $sql = "select * from tbl_articles where id=?";
-        $data=[$id];
-        $result=$this->doSelect($sql,$data);
-        return $result;
+  function __construct() {
+    parent::__construct();
+  }
 
-    }
-    function articlesCategorize()
-    {
-        $sql="select * from tbl_option where setting='limit_articles' ";
-        $result=$this->doSelect($sql,[],1);
-        $limit_article=$result['value'];
-        $sql = "select * from tbl_articles limit".$limit_article." ";
-        $result=$this->doSelect($sql);
-        return $result;
-    }
-    function mostView(){
-        $sql="select * from tbl_option where setting='mostView' ";
-        $result=$this->doSelect($sql,[],1);
-        $limit_article=$result['value'];
-        $sql="select * from tbl_articles order by viewd desc limit ".$limit_article."  ";
-        $result=$this->doSelect($sql);
-        return $result;
+  function articleInfo($id_articles) {
+    $sql = "SELECT * FROM tbl_articles WHERE id=?";
+    $data = [$id_articles];
+    $result = $this->doSELECT($sql, $data);
+    return $result;
+  }
 
-    }
+  function articlesCategorize() {
+    $sql = "SELECT * FROM tbl_option WHERE setting='limit_articles' ";
+    $result = $this->doSELECT($sql, [], 1);
+    $limit_article = $result['value'];
+    $sql = "SELECT * FROM tbl_articles limit" . $limit_article . " ";
+    $result = $this->doSELECT($sql);
+    return $result;
+  }
 
-    function newArticle(){
-        $sql="select * from tbl_option where setting='newArticle' ";
-        $result=$this->doSelect($sql,[],1);
-        $limit_article=$result['value'];
-        $sql="select * from tbl_articles order by id desc limit ".$limit_article."  ";
-        $result=$this->doSelect($sql);
-        return $result;
+  function mostView() {
+    $sql = "SELECT * FROM tbl_option WHERE setting='mostView' ";
+    $result = $this->doSELECT($sql, [], 1);
+    $limit_article = $result['value'];
+    $sql = "SELECT * FROM tbl_articles order by viewd desc limit " . $limit_article . "  ";
+    $result = $this->doSELECT($sql);
+    return $result;
+  }
 
+  function newArticle() {
+    $sql = "SELECT * FROM tbl_option WHERE setting='newArticle' ";
+    $result = $this->doSELECT($sql, [], 1);
+    $limit_article = $result['value'];
+    $sql = "SELECT * FROM tbl_articles order by id desc limit " . $limit_article . "  ";
+    $result = $this->doSELECT($sql);
+    return $result;
+  }
+
+  function commentParameter($id_articles,$id_articles_category) {
+    $sql = "SELECT * FROM tbl_comment_parameter WHERE id_articles_category=?";
+    $titel = $this->doSELECT($sql,[$id_articles_category]);
+
+
+    $sql2 = "SELECT * FROM tbl_comment WHERE id_articles=?";
+    $result2 = $this->doSELECT($sql2,[$id_articles]);
+
+    $scores_total = [];
+    foreach ($result2 as $value) {
+      $parameter = $value['parameter'];
+      $parameter_unserialize = unserialize($parameter);
+      foreach ($parameter_unserialize as $key => $val) {
+        if (!isset($scores_total[$key])) {
+          $scores_total[$key] = 0;
+        }
+        $scores_total[$key] = $scores_total[$key] + $val;
+      }
     }
-    function commentCategory($idCategory){
-        $sql="select * from tbl_comment_parameter where idCategory=?";
-        $data=[$idCategory];
-        $result=$this->doSelect($sql,$data);
-        return $result;
+    $total_comment=sizeof($result2);
+    foreach ($scores_total as $key => $val) {
+      $val=$val/$total_comment;
+      $scores_total[$key]=$val;
     }
-    function comment($id){
-        $sql="select * from tbl_comment where id=?";
-        $data=[$id];
-        $result=$this->doSelect($sql,$data);
-        return $result;
-    }
+    return ['titel'=>$titel,'scores_total'=>$scores_total];
+  }
+
+  function comment($id_articles,$id_articles_category) {
+    $sql = "SELECT * FROM tbl_comment WHERE id_articles=? AND id_articles_category=?";
+    $data = [$id_articles,$id_articles_category];
+    $result = $this->doSELECT($sql, $data);
+    return $result;
+  }
 
 }

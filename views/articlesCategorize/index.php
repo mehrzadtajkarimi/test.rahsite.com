@@ -1,5 +1,4 @@
 <?php
-
 $articles = $data['articles'];
 ?>
 <section id="articles">

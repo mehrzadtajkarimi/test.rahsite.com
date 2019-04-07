@@ -12,9 +12,9 @@ class model_articlesCategorize extends Model
         $sql = "SELECT * FROM tbl_option WHERE setting='limit_articlesCategorize'";
         $result=$this->doSelect($sql,[],1);
         $limit_articlesCategorize = $result['value'];
-        $sql = "SELECT * FROM tbl_articles limit ".$limit_articlesCategorize." ";
-        $result=$this->doSelect($sql);
-                return $result;
+        $sql2 = "SELECT * FROM tbl_articles limit ".$limit_articlesCategorize." ";
+        $result=$this->doSelect($sql2);
+        return $result;
     }
 
 
@@ -30,6 +30,6 @@ class model_articlesCategorize extends Model
         $data=['months'=>$months,'day'=>$day,'year'=>$year];
         return $data;
     }
-}
 
-?>
+
+}
