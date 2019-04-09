@@ -5,8 +5,8 @@
             <div class="layer-2 wow fadeIn" data-wow-duration="1s"></div>
             <div class="layer-3">
                 <div class="d-flex justify-content-center align-items-center h-50 text-white ">
-                        <span class="badge badge-light h1 opacity-5 p-1 ml-2 wow bounceIn"
-                              data-wow-delay="3s">solutions</span>
+                    <span class="badge badge-light h1 opacity-5 p-1 ml-2 wow bounceIn"
+                          data-wow-delay="3s">solutions</span>
                     <h3 class="wow flipInX text-shadow webzad" data-wow-duration="1s" data-wow-delay="2s">
                         webzad</h3>
                 </div>
@@ -28,16 +28,16 @@
     </div>
 </section>
 <script type="text/javascript">
-$(document).ready(function () {
-    var typed = new Typed("#typing-big-banner",{
-        strings: [
-            "طراحی وب سایت   مطابق با استاندارد های جهانی"
-        ],
-        typeSpeed: 60,
-        startDelay: 4000,
-        showCursor: false
+    $(document).ready(function () {
+        var typed = new Typed("#typing-big-banner", {
+            strings: [
+                "طراحی وب سایت   مطابق با استاندارد های جهانی"
+            ],
+            typeSpeed: 60,
+            startDelay: 4000,
+            showCursor: false
+        });
     });
-  });
 
 
 </script>

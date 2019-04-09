@@ -1,6 +1,3 @@
-<?php
-$articles = $data['articles'];
-?>
 <section id="articles">
     <div class="container mt-5 ">
         <div class="row">
@@ -23,7 +20,7 @@ $articles = $data['articles'];
             <div id="text-categories" class="col-md-9 pt-4">
                 <div class="ajax-categories">
                     <div class="card shadow border-0 rounded" >
-                    <p class="text-center font-face2 font-sizs-20 p-5 ">((لطفا دسته بندی مورد نظر را انتخواب نمایید.))</p>
+                        <p class="text-center font-face2 font-sizs-20 p-5 ">((لطفا دسته بندی مورد نظر را انتخواب نمایید.))</p>
                     </div>
                 </div>
                 <div class="ajax-categories">
@@ -34,19 +31,19 @@ $articles = $data['articles'];
     </div>
 </section>
 <script type="text/javascript">
-$("#articles #widget-categories ul li").click(function () {
-    $("#text-categories .ajax-categories").stop().fadeOut(0);
+    $("#articles #widget-categories ul li").click(function () {
+        $("#text-categories .ajax-categories").stop().fadeOut(0);
 
-    var index = $(this).index();
-    var section_selected = $("#text-categories .ajax-categories").eq(index);
+        var index = $(this).index();
+        var section_selected = $("#text-categories .ajax-categories").eq(index);
 
-    var url = '<?= URL?>articlesCategorize/tab';
-    var data = {'number': index};
+        var url = '<?= URL ?>articlesCategorize/tab';
+        var data = {'number': index};
 
-    $.post(url, data, function (msg) {
-        section_selected.html(msg);
+        $.post(url, data, function (msg) {
+            section_selected.html(msg);
+        });
+        section_selected.fadeIn(500);
     });
-    section_selected.fadeIn(500);
-  });
 
 </script>

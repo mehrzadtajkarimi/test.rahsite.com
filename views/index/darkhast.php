@@ -100,10 +100,10 @@
                                                                                placeholder="تصویر امنیتی">
                                                                     </div>
                                                                     <div class="col">
-                                                                            <textarea class="form-control"
-                                                                                      id="exampleFormControlTextarea1"
-                                                                                      rows="3"
-                                                                                      placeholder="متن شما"></textarea>
+                                                                        <textarea class="form-control"
+                                                                                  id="exampleFormControlTextarea1"
+                                                                                  rows="3"
+                                                                                  placeholder="متن شما"></textarea>
                                                                     </div>
                                                                 </div>
                                                                 <p class="text-danger p-2 ">پر کردن فیلد های (*) دار

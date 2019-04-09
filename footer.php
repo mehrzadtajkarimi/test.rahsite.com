@@ -1,5 +1,5 @@
 <?php
-$option= Model::getOption();
+$option = Model::getOption();
 ?>
 
 <div id="top">
@@ -42,7 +42,7 @@ $option= Model::getOption();
                     </div>
                     <div class="w-75 m-auto">
                         <a class="a text-info d-block text-center" href="mailto:mehrzadtajkarimi@gmail.com">
-                            <?= $option['email']  ?>
+                            <?= $option['email'] ?>
                         </a>
                     </div>
 

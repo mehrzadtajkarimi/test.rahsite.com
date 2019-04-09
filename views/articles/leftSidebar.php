@@ -8,7 +8,7 @@
                 <ol>
                     <a href="<?= URL ?>article/index/<?= $row['id']; ?>"
                        class="text-muted nav-link a text-center d-flex justify-content-center ">
-                        <?= $row['title']; ?>
+                           <?= $row['title']; ?>
                     </a>
                 </ol>
             <?php } ?>
@@ -23,7 +23,7 @@
                 <ol>
                     <a href="<?= URL ?>article/index/<?= $row['id']; ?>"
                        class="text-muted nav-link a text-center d-flex justify-content-center ">
-                        <?= $row['title']; ?>
+                           <?= $row['title']; ?>
                     </a>
                 </ol>
             <?php } ?>

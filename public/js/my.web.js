@@ -29,13 +29,13 @@ $(window).resize(function () {
 });
 //////////////////////////////////////////////////////////////////////////////////////////
 wow = new WOW(
-    {
-        boxClass: 'wow', // default
-        animateClass: 'animated', // default
-        offset: 100, // default
-        mobile: false, // default
-        live: true        // default
-    }
+        {
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 100, // default
+            mobile: false, // default
+            live: true        // default
+        }
 )
 wow.init();
 //////////////////////////////////////////////////////////////////////////////////////////
