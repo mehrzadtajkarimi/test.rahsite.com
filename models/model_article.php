@@ -81,17 +81,19 @@ class model_article extends Model {
         return $result;
     }
 
-    function comment_question($id_articles) {
+    function comment_questionANDanswer($id_articles) {
         $sql = "SELECT * FROM tbl_comment_question WHERE  id_article=? AND parent=0 ";
         $comment_question = $this->doSELECT($sql, [$id_articles]);
 
-        foreach ($comment_question as $key => $row) {
-            $sql = "SELECT * FROM tbl_comment_question WHERE parent=?";
-            $parent = [$row['id']];
-            $answer = $this->doSelect($sql, $parent, 1);
-            $comment_question[$key]['answer'] = $answer;
+        $sql2 = "SELECT * FROM tbl_comment_question WHERE parent !=0";
+        $all_answer = $this->doSelect($sql2);
+        $comment_answer = [];
+
+        foreach ($all_answer as $answer) {
+            $id_question = $answer['parent'];
+            $comment_answer [$id_question] = $answer;
         }
-        return $comment_question;
+        return ['comment_question' => $comment_question, 'comment_answer' => $comment_answer];
     }
 
 }
