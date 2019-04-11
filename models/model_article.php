@@ -75,4 +75,23 @@ class model_article extends Model {
         return $result;
     }
 
+    function commentCount() {
+        $sql = "SELECT COUNT(*) AS NumberOfOrders  FROM tbl_comment ";
+        $result = $this->doSELECT($sql, [], 1);
+        return $result;
+    }
+
+    function comment_question($id_articles) {
+        $sql = "SELECT * FROM tbl_comment_question WHERE  id_article=? AND parent=0 ";
+        $comment_question = $this->doSELECT($sql, [$id_articles]);
+
+        foreach ($comment_question as $key => $row) {
+            $sql = "SELECT * FROM tbl_comment_question WHERE parent=?";
+            $parent = [$row['id']];
+            $answer = $this->doSelect($sql, $parent, 1);
+            $comment_question[$key]['answer'] = $answer;
+        }
+        return $comment_question;
+    }
+
 }
