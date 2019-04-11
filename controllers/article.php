@@ -50,15 +50,17 @@ class article extends Controller {
             $this->view('articles/comment_results', $data, 1, 1);
         }
         if ($number == 1) {
-            $comment_question= $this->model->comment_question($id_articles);
-
+            $comment_questionANDanswer = $this->model->comment_questionANDanswer($id_articles);
+            $comment_question = $comment_questionANDanswer['comment_question'];
+            $comment_answer = $comment_questionANDanswer['comment_answer'];
 
 
             $data = [
-                'comment_question'=>$comment_question
+                'comment_question' => $comment_question,
+                'comment_answer' => $comment_answer
             ];
 
-            $this->view('articles/comment_question', $data, 1, 1);
+            $this->view('articles/comment_questionANDanswer', $data, 1, 1);
         }
     }
 
