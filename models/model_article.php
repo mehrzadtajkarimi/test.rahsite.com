@@ -89,6 +89,10 @@ class model_article extends Model {
         $all_answer = $this->doSelect($sql2);
         $comment_answer = [];
 
+        foreach ($all_answer as $answer) {
+            $id_question = $answer['parent'];
+            $comment_answer [$id_question] = $answer;
+        }
         return ['comment_question' => $comment_question, 'comment_answer' => $comment_answer];
     }
 
