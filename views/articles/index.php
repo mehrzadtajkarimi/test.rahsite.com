@@ -6,6 +6,7 @@ $mostView = $data['mostView'];
 $newArticle = $data['newArticle'];
 $commentParameterName = $data['commentParameterName'];
 $commentParameterScores = $data['commentParameterScores'];
+$commentCount=$data['commentCount'];
 ?>
 <div id="article" class="container mt-5">
     <div class="row">
@@ -56,7 +57,7 @@ $commentParameterScores = $data['commentParameterScores'];
                 $.post(url, data, function (msg) {
                     section_selected.html(msg);
                 });
-                section_selected.fadeIn(500);
+                section_selected.fadeIn(200);
             });
 
 </script>

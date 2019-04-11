@@ -12,8 +12,9 @@
                                         <span class="d-sm-inline d-block"></span>
                                 </p>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body"> <span class="d-flex justify-content-end pl-4" >تعداد <?= $commentCount['NumberOfOrders'] ?> نظرثبت گردیده</span>
                                 <div class="row">
+                                   
                                         <?php
                                         foreach ($commentParameterName as $row) {
                                                 $scores = $commentParameterScores[$row['id']];
@@ -23,7 +24,7 @@
                                                 ?>
                                                 <p class="col-sm-5 font-small "><?= $row['title']; ?></p>
 
-                                                <ul class="col-sm-7 score list-inline p-0 d-flex align-items-center justify-content-center">
+                                                <ul class="col-sm-7 score list-inline p-0 d-flex align-items-center justify-content-center mt-2">
                                                         <?php for ($i = 0; $i < $part1; $i++) { ?>
                                                                 <li>
                                                                         <span class="bg-gray h-100 d-block"></span>

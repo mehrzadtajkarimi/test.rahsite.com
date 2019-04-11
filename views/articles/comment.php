@@ -6,12 +6,12 @@
             نظر سنجی
         </a>
         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
-            ثبت نظر
+           پرسش و پاسخ
         </a>
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    <div class="tab-pane fade show active mb-4 " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="card shadow border-0 rounded" >
             <p class="text-center font-face2 font-sizs-20 p-5 ">
                 ((لطفا جهت مشاهده دسته بندی مورد نظر را انتخواب نمایید.))

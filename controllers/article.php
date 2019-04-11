@@ -15,10 +15,12 @@ class article extends Controller {
         $mostView = $this->model->mostView();
         $newArticle = $this->model->newArticle();
 
+
         $commentParameter = $this->model->commentParameter($id_articles, $id_articles_category);
         $commentParameterName = $commentParameter['titel'];
         $commentParameterScores = $commentParameter['scores_total'];
         $comments = $this->model->comment($id_articles, $id_articles_category);
+        $commentCount = $this->model->commentCount();
         $data = [
             'article_fetchAll' => $article_fetchAll,
             'article_fetch' => $article_fetch,
@@ -27,7 +29,8 @@ class article extends Controller {
             'newArticle' => $newArticle,
             'commentParameterName' => $commentParameterName,
             'commentParameterScores' => $commentParameterScores,
-            'comments' => $comments
+            'comments' => $comments,
+            'commentCount' => $commentCount
         ];
         $this->view('articles/index', $data);
     }
@@ -47,13 +50,15 @@ class article extends Controller {
             $this->view('articles/comment_results', $data, 1, 1);
         }
         if ($number == 1) {
+            $comment_question= $this->model->comment_question($id_articles);
 
 
 
             $data = [
+                'comment_question'=>$comment_question
             ];
 
-            $this->view('articles/comment_logs', $data, 1, 1);
+            $this->view('articles/comment_question', $data, 1, 1);
         }
     }
 
