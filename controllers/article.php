@@ -3,7 +3,7 @@
 class article extends Controller {
 
     function __construct() {
-
+        parent::__construct();
     }
 
     function index($id_articles, $id_articles_category) {

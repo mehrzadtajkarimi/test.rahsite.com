@@ -73,11 +73,11 @@ $option = Model::getOption();
     gtag('config', 'UA-136110471-1');
 </script>
 <!-- ================================================== -->
-<script src="public/js/wow.min.js"></script>
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/jquery.hover3d.min.js"></script>
-<script src="public/js/all.js"></script>
-<script src="public/js/my.web.js"></script>
+<script src="<?= URL ?>public/js/wow.min.js"></script>
+<script src="<?= URL ?>public/js/bootstrap.min.js"></script>
+<script src="<?= URL ?>public/js/jquery.hover3d.min.js"></script>
+<script src="<?= URL ?>public/js/all.js"></script>
+<script src="<?= URL ?>public/js/my.web.js"></script>
 
 </body>
 </html>

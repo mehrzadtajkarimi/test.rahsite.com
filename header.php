@@ -14,12 +14,12 @@
               content="درباره من :اینجانب مهرزاد تاج کریمی دانش آموخته در مجتمع فنی تهران به مدت دوسال در زمینه طراحی و برنامه نویسی وب سایت فعالیت میکنم.بسیار پر انرژی تو زمینه کاری خودم چون واقعا عاشق کارم هستم. "/>
         <meta property="og:type" content="Content"/>
         <title> وب زاد|وب سایت شخصی مهرزاد تاج کریمی | توسعه دهنده وب سایت</title>
-        <link rel="icon" href="public/image/icon.png" type="image/png">
-        <link rel="stylesheet" href="public/css/bootstrap.min.css">
-        <link rel="stylesheet" href="public/css/animate.css">
-        <link rel="stylesheet" href="public/css/style.css">
-        <script src="public/js/jquery-2.1.3.min.js"></script>
-        <script src="public/js/typed.min.js"></script>
+        <link rel="icon" href="<?= URL ?>public/image/icon.png" type="image/png">
+        <link rel="stylesheet" href="<?= URL ?>public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= URL ?>public/css/animate.css">
+        <link rel="stylesheet" href="<?= URL ?>public/css/style.css">
+        <script src="<?= URL ?>public/js/jquery-2.1.3.min.js"></script>
+        <script src="<?= URL ?>public/js/typed.min.js"></script>
 
     </head>
     <body>
@@ -49,7 +49,7 @@
                                     class="fas fa-mobile-alt d-lg-none"></i> تماس با من </a>
                         </li>
                         <li class="nav-item  d-lg-block">
-                            <a class="nav-link cursor-pointer" href="https://jobinja.ir/user/LW-2612984"><i
+                            <a class="nav-link cursor-pointer" href="https://jobinja.ir/user/webzad"><i
                                     class="fas fa-file-download d-lg-none"></i> دانلود رزومه من </a>
                         </li>
 
