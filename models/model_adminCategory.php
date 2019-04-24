@@ -1,6 +1,6 @@
 <?php
 
-class model_admin extends Model {
+class model_adminCategory extends Model {
 
     function __construct() {
         parent::__construct();
@@ -9,8 +9,8 @@ class model_admin extends Model {
     function index() {
         
     }
-    function articlesCategory(){
-        $sql="SELECT * FROM tbl_articles_category ";
+    function adminCategory(){
+        $sql="SELECT * FROM tbl_articles_category WHERE parent =1 ";
         $result=$this->doSELECT($sql);
         return $result;
     }

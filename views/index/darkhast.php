@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-4  d-flex ">
                     <img src="public/image/darkhast.png" alt="darkhast"
-                         class="bg-white img-thumbnail justify-content-center align-self-center shadow d-none d-sm-block">
+                        class="bg-white img-thumbnail justify-content-center align-self-center shadow d-none d-sm-block">
                 </div>
                 <div class="col-sm-8 mt-3 mb-4">
                     <div class="card bg-light rounded shadow ">
@@ -40,27 +40,27 @@
                                 </li>
                             </ul>
                             <div class="d-flex justify-content-center">
-                                <a href="https://t.me/mehrzad_tajkarimi">
-                                    <button type="button" class="btn btn-outline-secondary m-1"><i
-                                            class="fab fa-telegram"></i> تماس از طریق تلگرام
-                                    </button>
+                                <a href="https://t.me/mehrzad_tajkarimi" class="btn btn-outline-secondary m-1"
+                                    role="button">
+                                    <i class="fab fa-telegram"></i> تماس از طریق تلگرام
+
                                 </a>
                                 <!-- Button trigger modal -->
                                 <button id="button-Order" type="button" class="btn btn-outline-secondary m-1"
-                                        data-toggle="modal" data-target="#exampleModal"><i class="far fa-edit"></i>
+                                    data-toggle="modal" data-target="#exampleModal"><i class="far fa-edit"></i>
                                     ثبت سفارش
                                 </button>
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-lg modal-dialog-centered modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">همین حالا فرم زیر را
                                                     تکمیل نمایید تا در اسرع وقت با شما تماس گرفته شود.</h5>
                                                 <button type="button" class="close m-0 p-0" data-dismiss="modal"
-                                                        aria-label="Close">
+                                                    aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -84,26 +84,23 @@
                                                             <form>
                                                                 <div class="form-row ">
                                                                     <div class="col-md-6">
+                                                                        <input type="text" class="form-control  mb-3 "
+                                                                            placeholder="نام و نام خانوادگی (*)">
                                                                         <input type="text"
-                                                                               class="form-control  mb-3 "
-                                                                               placeholder="نام و نام خانوادگی (*)">
-                                                                        <input type="text"
-                                                                               class="form-control mt-3 mb-3"
-                                                                               placeholder="شماره مبایل(*)">
+                                                                            class="form-control mt-3 mb-3"
+                                                                            placeholder="شماره مبایل(*)">
                                                                     </div>
                                                                     <div class="col-md-6">
+                                                                        <input type="text" class="form-control  mb-3"
+                                                                            placeholder="ایمیل (*)">
                                                                         <input type="text"
-                                                                               class="form-control  mb-3"
-                                                                               placeholder="ایمیل (*)">
-                                                                        <input type="text"
-                                                                               class="form-control mt-3 mb-3"
-                                                                               placeholder="تصویر امنیتی">
+                                                                            class="form-control mt-3 mb-3"
+                                                                            placeholder="تصویر امنیتی">
                                                                     </div>
                                                                     <div class="col">
                                                                         <textarea class="form-control"
-                                                                                  id="exampleFormControlTextarea1"
-                                                                                  rows="3"
-                                                                                  placeholder="متن شما"></textarea>
+                                                                            id="exampleFormControlTextarea1" rows="3"
+                                                                            placeholder="متن شما"></textarea>
                                                                     </div>
                                                                 </div>
                                                                 <p class="text-danger p-2 ">پر کردن فیلد های (*) دار
@@ -116,7 +113,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary ml-2 mr-2"
-                                                        data-dismiss="modal">Close
+                                                    data-dismiss="modal">Close
                                                 </button>
                                                 <button type="button" class="btn btn-primary ml-2 mr-2">Save
                                                     changes

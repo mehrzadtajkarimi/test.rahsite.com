@@ -1,4 +1,3 @@
-<base href="<?= URL ?>">
 <main>
 
     <?php require ('banner-big-bg.php')?>

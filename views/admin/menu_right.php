@@ -5,19 +5,19 @@
     <link rel="stylesheet" href="<?= URL ?>public/css/style.css">
     <script src="<?= URL ?>public/js/jquery-2.1.3.min.js"></script>
     <script src="<?= URL ?>public/js/typed.min.js"></script>
-    <script>
-        $("#nav-right #nav-ul>li").click(function () {
-            $(this).find("a").toggleClass('active');
-            $(this).find("ul").fadeToggle('500');
-        });
-
-    </script>
     <script src="<?= URL ?>public/js/wow.min.js"></script>
     <script src="<?= URL ?>public/js/bootstrap.min.js"></script>
     <script src="<?= URL ?>public/js/jquery.hover3d.min.js"></script>
     <script src="<?= URL ?>public/js/all.js"></script>
     <script src="<?= URL ?>public/js/my.web.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $("#nav-right #nav-ul>li").click(function () {
+                $(this).find("a").toggleClass('active');
+                $(this).find("ul").fadeToggle('500');
+            });
+        });
+    </script>
 
     <style>
         * {
@@ -202,46 +202,46 @@
 </header>
 
 
-    <div class="container-fluid">
-       
-            <div class="d-block shadow " id="head">
-                <div class="head shadow">
-                    <p class="">پنل مدیریت</p>
-                </div>
-            </div>
+<div class="container-fluid">
+
+    <div class="d-block shadow " id="head">
+        <div class="head shadow">
+            <p class="">پنل مدیریت</p>
         </div>
-        <div class="row">
-            <div class="col-lg-2 col " id="nav-right">
-                <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars text-secondary"></i>
-                    </button>
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                        <ul class="nav flex-column  " id="nav-ul" >
-                            <li class="nav-item ">
-                                <a class="nav-link active-li" href=""><i class="fas fa-home ml-3"></i>مدیریت</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-2 col " id="nav-right">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-secondary"></i>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="nav flex-column  " id="nav-ul" >
+                    <li class="nav-item ">
+                        <a class="nav-link active-li" href=""><i class="fas fa-home ml-3"></i>مدیریت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-users ml-3"></i> کاربران</a>
+                        <ul class="nav flex-column ">
+                            <li class="nav-item "><a href=""><i class="fas fa-users-cog ml-2"></i>لیست کاربران </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-users ml-3"></i> کاربران</a>
-                                <ul class="nav flex-column ">
-                                    <li class="nav-item "><a href=""><i class="fas fa-users-cog ml-2"></i>لیست کاربران </a>
-                                    </li>
-                                    <li class="nav-item "><a href=""><i class="fas fa-comments ml-2"></i>نظرات</a>
-                                    </li>
-                                    <li class="nav-item "><a href=""><i class="fab fa-first-order ml-2"></i> لیست سفارشات</a>
-                                    </li>
-                                </ul>
+                            <li class="nav-item "><a href=""><i class="fas fa-comments ml-2"></i>نظرات</a>
                             </li>
-
-                            <a href="?admin-logout=1" type="button" class="btn m-auto btn-exit border-0 "><i class="fas fa-sign-out-alt"></i></a>
+                            <li class="nav-item "><a href=""><i class="fab fa-first-order ml-2"></i> لیست سفارشات</a>
+                            </li>
                         </ul>
-                    </div>
-                </nav>
+                    </li>
 
-                <a class="d-none d-lg-block" href="http://www.webzad.ir/">
-                    <img src="<?= URL ?>public/image/logo1.png" class="img-fluid w-50 m-auto d-block pt-5" alt="logo_rahsite">
-                </a>
+                    <a href="?admin-logout=1" type="button" class="btn m-auto btn-exit border-0 "><i class="fas fa-sign-out-alt"></i></a>
+                </ul>
             </div>
+        </nav>
+
+        <a class="d-none d-lg-block" href="http://www.webzad.ir/">
+            <img src="<?= URL ?>public/image/logo1.png" class="img-fluid w-50 m-auto d-block pt-5" alt="logo_rahsite">
+        </a>
+    </div>
 
 
 
