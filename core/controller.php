@@ -1,7 +1,8 @@
 <?php
 
 class Controller {
-
+    public $message='';
+    public $error='';
     function __construct() {
 
     }

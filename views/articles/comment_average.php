@@ -1,7 +1,6 @@
 <div id="Fancy-lines-article" class="row">
     <div class="line m-auto">
-        <img src="public/image/webzad-Fancy-lines-article.png" alt="webzad-Fancy-lines-article"
-            class="img-fluid w-75 d-block m-auto ">
+        <img src="public/image/webzad-Fancy-lines-article.png" alt="webzad-Fancy-lines-article" class="img-fluid w-75 d-block m-auto ">
     </div>
 </div>
 <article id="comment_parameter" class="card mt-4 mb-3">
@@ -17,36 +16,36 @@
                 <div class="row">
 
                     <?php
-                                        foreach ($commentParameterName as $row) {
-                                                $scores = $commentParameterScores[$row['id']];
-                                                $part1 = floor($scores);
-                                                $part2 = number_format($scores - $part1, 1);
-                                                $countLi = $part1;
-                                                ?>
-                    <p class="col-sm-5 font-small "><?= $row['title']; ?></p>
+                    foreach ($commentParameterName as $row) {
+                        $scores = $commentParameterScores[$row['id']];
+                        $part1 = floor($scores);
+                        $part2 = number_format($scores - $part1, 1);
+                        $countLi = $part1;
+                        ?>
+                        <p class="col-sm-5 font-small "><?= $row['title']; ?></p>
 
-                    <ul class="col-sm-7 score list-inline p-0 d-flex align-items-center justify-content-center mt-2">
-                        <?php for ($i = 0; $i < $part1; $i++) { ?>
-                        <li>
-                            <span class="bg-gray h-100 d-block"></span>
-                        </li>
-                        <?php } ?>
-                        <?php
-                                                        if ($part1 < 5) {
-                                                                $countLi++;
-                                                                ?>
-                        <li>
-                            <span class="bg-gray h-100 d-block" style="width: <?= $part2 * 100; ?>%;"></span>
-                        </li>
-                        <?php } ?>
-                        <?php
-                                                        $countLi_Remain = 5 - $countLi;
-                                                        for ($i = 0; $i < $countLi_Remain; $i++) {
-                                                                ?>
-                        <li></li>
-                        <?php } ?>
-                        <i class="font-size-05 pr-1"> <?= $part1 + $part2; ?></i>
-                    </ul>
+                        <ul class="col-sm-7 score list-inline p-0 d-flex align-items-center justify-content-center mt-2">
+                            <?php for ($i = 0; $i < $part1; $i++) { ?>
+                                <li>
+                                    <span class="bg-gray h-100 d-block"></span>
+                                </li>
+                            <?php } ?>
+                            <?php
+                            if ($part1 < 5) {
+                                $countLi++;
+                                ?>
+                                <li>
+                                    <span class="bg-gray h-100 d-block" style="width: <?= $part2 * 100; ?>%;"></span>
+                                </li>
+                            <?php } ?>
+                            <?php
+                            $countLi_Remain = 5 - $countLi;
+                            for ($i = 0; $i < $countLi_Remain; $i++) {
+                                ?>
+                                <li></li>
+                            <?php } ?>
+                            <i class="font-size-05 pr-1"> <?= $part1 + $part2; ?></i>
+                        </ul>
                     <?php } ?>
                 </div>
             </div>

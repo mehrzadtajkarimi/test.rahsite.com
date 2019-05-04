@@ -1,10 +1,12 @@
 <?php
 
-class Model {
+class Model
+{
 
     public static $conn = '';
 
-    function __construct() {
+    function __construct()
+    {
         $serverName = 'localhost';
         $userName = 'rahsitec_admin';
         $password = 'Mehrzad@1';
@@ -13,7 +15,8 @@ class Model {
         self::$conn = new PDO('mysql:host=' . $serverName . ';dbname=' . $dbName, $userName, $password, $attr);
     }
 
-    public static function getOption() {
+    public static function getOption()
+    {
         $sql = "select * from tbl_option ";
         $stmt = self::$conn->prepare($sql);
         $stmt->execute();
@@ -27,7 +30,8 @@ class Model {
         return $options_new;
     }
 
-    function doSelect($sql, $values = [], $fetch = '', $fetch_style = PDO::FETCH_ASSOC) {
+    function doSelect($sql, $values = [], $fetch = '', $fetch_style = PDO::FETCH_ASSOC)
+    {
         $stmt = self::$conn->prepare($sql);
         foreach ($values as $key => $value) {
             $stmt->bindValue($key + 1, $value);
@@ -40,5 +44,28 @@ class Model {
         }
         return $result;
     }
-
+    function doQuery($sql, $values = [])
+    {
+        $stmt = self::$conn->prepare($sql);
+        foreach ($values as $key => $value) {
+            $stmt->bindValue($key + 1, $value);
+        }
+        $stmt->execute();
+    }
+    public static function sessionStart()
+    {
+       @session_start();
+    }
+    public static function sessionSet($name, $value)
+    {
+        $_SESSION[$name] = $value;
+    }
+    public static function sessionGet($name)
+    {
+        if (isset($_SESSION[$name])) {
+            return $_SESSION[$name];
+        } else {
+            return false;
+        }
+    }
 }
