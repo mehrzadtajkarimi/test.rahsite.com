@@ -1,4 +1,5 @@
 <?php
 include "bootstrap/init.php";
 
-echo $_ENV['DB_NAME'];
+echo site_url('panel');
+
