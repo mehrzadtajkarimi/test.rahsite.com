@@ -1,2 +1,2 @@
 <?php
-echo 'fff';
+include "vendor/autoload.php";
