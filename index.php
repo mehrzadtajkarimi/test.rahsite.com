@@ -4,11 +4,12 @@
 // use App\Utilities\Url;
 
 use App\Core\Request;
+use App\Core\Routing\Router;
 
 include "bootstrap/init.php";
 
-$echo =new Request();
-echo $echo->uri();
+ new Router;
+
 
 
 // echo Asset::css('style.css');

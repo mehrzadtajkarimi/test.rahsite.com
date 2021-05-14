@@ -5,7 +5,7 @@ namespace App\Core\Routing;
 class Route
 {
 
-    private static $route = [];
+    private static $routes = [];
 
 
 
@@ -13,7 +13,7 @@ class Route
     private static function add($method, $url, $action)
     {
         $method = is_array($method) ? $method : [$method];
-        self::$route[] = ['method' => $method, 'url' => $url, 'action' => $action];
+        self::$routes[] = ['method' => $method, 'url' => $url, 'action' => $action];
     }
 
 
@@ -42,5 +42,13 @@ class Route
     public static function options($url, $action)
     {
         self::add('options', $url, $action);
+    }
+
+
+
+
+    public static function routes()
+    {
+       return self::$routes;
     }
 }
