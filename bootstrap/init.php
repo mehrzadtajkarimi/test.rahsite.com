@@ -9,3 +9,4 @@ $dotenv = Dotenv\Dotenv::createImmutable(BASEPATH);
 $dotenv->load();
 
 include BASEPATH . "helpers/helper.php";
+include BASEPATH . "routes/web.php";
