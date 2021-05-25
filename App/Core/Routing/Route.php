@@ -10,38 +10,38 @@ class Route
 
 
 
-    private static function add($method, $url, $action)
+    private static function add($method, $uri, $action)
     {
         $method = is_array($method) ? $method : [$method];
-        self::$routes[] = ['method' => $method, 'url' => $url, 'action' => $action];
+        self::$routes[] = ['method' => $method, 'uri' => $uri, 'action' => $action];
     }
 
 
 
 
-    public static function get($url, $action)
+    public static function get($uri, $action)
     {
-        self::add('get', $url, $action);
+        self::add('get', $uri, $action);
     }
-    public static function post($url, $action)
+    public static function post($uri, $action)
     {
-        self::add('post', $url, $action);
+        self::add('post', $uri, $action);
     }
-    public static function put($url, $action)
+    public static function put($uri, $action)
     {
-        self::add('put', $url, $action);
+        self::add('put', $uri, $action);
     }
-    public static function patch($url, $action)
+    public static function patch($uri, $action)
     {
-        self::add('patch', $url, $action);
+        self::add('patch', $uri, $action);
     }
-    public static function delete($url, $action)
+    public static function delete($uri, $action)
     {
-        self::add('delete', $url, $action);
+        self::add('delete', $uri, $action);
     }
-    public static function options($url, $action)
+    public static function options($uri, $action)
     {
-        self::add('options', $url, $action);
+        self::add('options', $uri, $action);
     }
 
 
