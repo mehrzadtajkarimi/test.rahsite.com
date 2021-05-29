@@ -17,12 +17,14 @@ class Router
 
     public function __construct()
     {
-        $this->request = new Request;
-        $this->routes = Route::routes();
+        $this->request       = new Request;
+        $this->routes        = Route::routes();
         $this->route_current = $this->fine_route($this->request) ?? null;
+        $this->run_middleware();
+
     }
 
-    public function fine_route(Request $request)
+    private function fine_route(Request $request)
     {
         foreach ($this->routes as  $route) {
             if (in_array($request->method(), $route['method']) && $request->uri() == $route['uri']) {
@@ -31,27 +33,27 @@ class Router
         }
         return null;
     }
-    public function dispatch404()
+
+    private function run_middleware()
+    {
+        $middles =$this->route_current['middleware'];
+        foreach ($middles as $middle) {
+           $middle= new $middle;
+            return $middle->handle();
+        }
+
+    }
+
+    private function dispatch404()
     {
         header("HTTP/1.0 404 Not Found");
         view('error.404');
         die();
     }
 
-    public function run()
+    private function dispatch($route)
     {
-        if (is_null($this->route_current)) {
-            $this->dispatch404();
-        }
-        $this->dispatch($this->route_current);
-    }
-
-
-
-
-    public function dispatch($route)
-    {
-        $action =   $route['action'];
+        $action = $route['action'];
         if (is_null($action) || empty($action)) {
             return;
         }
@@ -62,7 +64,7 @@ class Router
             $action = explode('@', $action);
         }
         if (is_array($action)) {
-            $class_name = self::BASE_CONTROLLER . $action[0];
+            $class_name  = self::BASE_CONTROLLER . $action[0];
             $method_name = $action[1];
             if (!class_exists($class_name)) {
                throw new \Exception("class $class_name Not Exists");
@@ -73,5 +75,15 @@ class Router
             $controller = new $class_name();
             return $controller->{$method_name}();
         }
+    }
+
+
+
+    public function run()
+    {
+        if (is_null($this->route_current)) {
+            $this->dispatch404();
+        }
+        $this->dispatch($this->route_current);
     }
 }
