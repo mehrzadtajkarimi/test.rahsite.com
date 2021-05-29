@@ -1,16 +1,12 @@
 <?php
 
-// use App\Utilities\Asset;
-// use App\Utilities\Url;
-
-use App\Core\Request;
 use App\Core\Routing\Router;
 
 include "bootstrap/init.php";
 
- new Router;
 
-
+$router = new Router;
+$router->run();
 
 // echo Asset::css('style.css');
 // echo '<hr>';

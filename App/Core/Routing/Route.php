@@ -7,18 +7,15 @@ class Route
 
     private static $routes = [];
 
-
-
-
     private static function add($method, $uri, $action)
     {
         $method = is_array($method) ? $method : [$method];
         self::$routes[] = ['method' => $method, 'uri' => $uri, 'action' => $action];
     }
-
-
-
-
+    public static function routes()
+    {
+       return self::$routes;
+    }
     public static function get($uri, $action)
     {
         self::add('get', $uri, $action);
@@ -47,8 +44,5 @@ class Route
 
 
 
-    public static function routes()
-    {
-       return self::$routes;
-    }
+
 }
