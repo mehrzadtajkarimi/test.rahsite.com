@@ -6,10 +6,16 @@ use App\Middleware\Gate;
 
 /**
  * add middleware example =
- * Route::get('/','HomeController@index',[Gate::class]);
+ * Route::get('/','exampleController@index',[Gate::class]);
+ *
+ * add slug example =
+ * Route::get('/example/{slug}','exampleController@index');
+ * Route::get('/example/{slug}/example2/{id}','exampleController@index');
  */
 
 
 
 
+
 Route::get('/','HomeController@index');
+Route::get('/pp/{slug}','HomeController@index');

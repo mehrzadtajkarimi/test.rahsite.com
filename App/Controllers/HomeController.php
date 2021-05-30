@@ -8,6 +8,7 @@ class HomeController
 
     public function index()
     {
-        return view('index');
+        global $request;
+        return view('index',['request'=>$request]);
     }
 }
