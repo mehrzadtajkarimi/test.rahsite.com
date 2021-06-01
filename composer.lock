@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc9c234f84a3c55b133c98bb64be2c0f",
+    "content-hash": "905fd4a1db51d9f14a958500b62791e6",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -532,6 +532,68 @@
                 }
             ],
             "time": "2020-04-13T13:17:36+00:00"
+        },
+        {
+            "name": "opis/database",
+            "version": "4.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/database.git",
+                "reference": "5f6839e75ff04e878ec6aec880df935c3061af20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/database/zipball/5f6839e75ff04e878ec6aec880df935c3061af20",
+                "reference": "5f6839e75ff04e878ec6aec880df935c3061af20",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^7.0",
+                "symfony/yaml": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opis\\Database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                },
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                }
+            ],
+            "description": "A database abstraction layer over PDO, that provides a powerful and intuitive query builder, bundled with an easy to use schema builder",
+            "homepage": "https://opis.io/database",
+            "keywords": [
+                "Abstraction Layer",
+                "database",
+                "mysql",
+                "postgre",
+                "query",
+                "query builder",
+                "schema builder",
+                "sql",
+                "sqlite"
+            ],
+            "time": "2021-04-14T19:33:16+00:00"
         },
         {
             "name": "phpoption/phpoption",
