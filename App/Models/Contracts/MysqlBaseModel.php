@@ -6,7 +6,7 @@ use Medoo\Medoo;
 
 class MysqlBaseModel extends BaseModel
 {
-    function __construct()
+    function __construct($id)
     {
         try {
             $this->connection = new Medoo([
@@ -44,6 +44,9 @@ class MysqlBaseModel extends BaseModel
         } catch (\PDOException $e) {
             echo "Connection failed" . $e->getMessage();
         }
+        if (!is_null($id)) {
+            return $this->find($id);
+        }
     }
 
 
@@ -55,7 +58,10 @@ class MysqlBaseModel extends BaseModel
     public function find($id): object
     {
         $record = $this->connection->get($this->table, '*', [$this->primaryKey => $id]);
-        return (object)$record;
+        foreach ($record as $key => $value) {
+            $this->attributes[$key] = $value;
+        }
+        return $this;
     }
     public function all(): array
     {
@@ -79,5 +85,4 @@ class MysqlBaseModel extends BaseModel
     {
         return $this->connection->count($this->table,  $where);
     }
- 
 }

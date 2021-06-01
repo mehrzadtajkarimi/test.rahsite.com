@@ -15,8 +15,8 @@ $data=[
     'password'=>'123456'
 ];
 echo '<pre>';
-$userModel= new User();
-$result=$userModel->get(['email']);
+$userModel= new User(1);
+$result=$userModel->email;
 var_dump($result);
 
 
