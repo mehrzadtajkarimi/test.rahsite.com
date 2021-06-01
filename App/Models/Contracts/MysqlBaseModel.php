@@ -50,6 +50,8 @@ class MysqlBaseModel extends BaseModel
     }
 
 
+
+
     public function create(array $data): int
     {
         $this->connection->insert($this->table, $data);

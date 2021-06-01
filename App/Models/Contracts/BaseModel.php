@@ -2,7 +2,7 @@
 
 namespace App\Models\Contracts;
 
-abstract class BaseModel implements CRUD
+abstract class  BaseModel implements CRUD
 {
 
     protected $connection;
@@ -24,11 +24,17 @@ abstract class BaseModel implements CRUD
         }
         return $this->attributes[$key];
     }
+
     public function getAttributes()
     {
         return $this->attributes;
     }
 
+    public function remove(): int
+    {
+        $row_id = $this->{$this->primaryKey};
+        return $this->delete([$this->primaryKey => $row_id]);
+    }
 
     public function __get($key)
     {

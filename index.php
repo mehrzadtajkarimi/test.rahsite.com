@@ -9,14 +9,23 @@ include "bootstrap/init.php";
 $router = new Router;
 $router->run();
 
-$data=[
-    'name'=>'mehrzad',
-    'email' => ' mehrzad@gmail.com',
-    'password'=>'123456'
-];
+// $data=[
+//     'name'=>'mehrzad',
+//     'email' => ' mehrzad@gmail.com',
+//     'password'=>'123456'
+// ];
+// echo '<pre>';
+// $userModel= new User(1);
+// $result=$userModel->email;
+// var_dump($result);
+
+
+
+
+
 echo '<pre>';
-$userModel= new User(1);
-$result=$userModel->email;
+$userModel= new User(2);
+$result=$userModel->remove();
 var_dump($result);
 
 
