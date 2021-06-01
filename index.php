@@ -23,10 +23,16 @@ $router->run();
 
 
 
+// echo '<pre>';
+// $userModel= new User(2);
+// $result=$userModel->remove();
+// var_dump($result);
+
 echo '<pre>';
-$userModel= new User(2);
-$result=$userModel->remove();
-var_dump($result);
+$userModel= new User(3);
+$userModel->name = 'ali';
+$userModel->save();
+// var_dump($result);
 
 
 

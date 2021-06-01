@@ -12,9 +12,6 @@ abstract class  BaseModel implements CRUD
     protected $attributes = [];
 
 
-    // public function __construct() {
-
-    // }
 
 
     public function getAttribute($key)
@@ -24,20 +21,38 @@ abstract class  BaseModel implements CRUD
         }
         return $this->attributes[$key];
     }
-
     public function getAttributes()
     {
         return $this->attributes;
     }
+
+
+
+
 
     public function remove(): int
     {
         $row_id = $this->{$this->primaryKey};
         return $this->delete([$this->primaryKey => $row_id]);
     }
-
-    public function __get($key)
+    public function save(): int
     {
-        return $this->getAttribute($key);
+        $row_id = $this->{$this->primaryKey};
+        return $this->update($this->attributes, [$this->primaryKey => $row_id]);
+    }
+
+
+
+
+    public function __get($property)
+    {
+        return $this->getAttribute($property);
+    }
+    public function __set($property, $value)
+    {
+        if (!array_key_exists($property, $this->attributes)) {
+            return NULL;
+        }
+        $this->attributes[$property] = $value;
     }
 }
