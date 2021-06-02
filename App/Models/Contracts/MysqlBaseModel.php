@@ -10,22 +10,17 @@ class  MysqlBaseModel extends BaseModel
     {
         try {
             $this->connection = new Medoo([
-                // [required]
                 'type' => 'mysql',
                 'host' => $_ENV['DB_HOST'],
                 'database' => $_ENV['DB_NAME'],
                 'username' => $_ENV['DB_USER'],
                 'password' => $_ENV['DB_PASS'],
-                // [optional]
                 'charset' => 'utf8mb4',
                 'collation' => 'utf8mb4_general_ci',
                 'port' => 3306,
-                // [optional] Table prefix, all table names will be prefixed as PREFIX_table.
                 'prefix' => '',
                 // [optional] Enable logging, it is disabled by default for better performance.
                 'logging' => true,
-                // [optional]
-                // Error mode
                 // PDO::ERRMODE_SILENT (default) | PDO::ERRMODE_WARNING | PDO::ERRMODE_EXCEPTION
                 'error' => \PDO::ERRMODE_EXCEPTION,
             ]);
@@ -58,11 +53,17 @@ class  MysqlBaseModel extends BaseModel
 
     public function all(): array
     {
-        return $this->connection->select($this->table, '*');
+        return $this->get('*');
     }
 
-    public function get(array $columns, array $where = null): array
+    public function get($columns, array $where = null): array
     {
+        // start pagination
+        $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? $_GET['page'] : 1;
+        $start = ($page - 1) * $this->pageSize;
+        $where['LIMIT'] = [$start, $this->pageSize];
+        // end pagination
+
         return $this->connection->select($this->table, $columns, $where);
     }
 
