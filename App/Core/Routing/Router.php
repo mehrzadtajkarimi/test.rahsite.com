@@ -4,6 +4,7 @@ namespace App\Core\Routing;
 
 use App\Core\Request;
 use App\Core\Routing\Route;
+use App\Middleware\GlobalMiddleware;
 
 const  BASE_CONTROLLER = '\App\Controllers\\';
 class Router
@@ -21,6 +22,14 @@ class Router
         $this->routes        = Route::routes();
         $this->route_current = $this->fine_route($this->request) ?? null;
         $this->run_middleware();
+    }
+
+    public function run()
+    {
+        if (is_null($this->route_current)) {
+            $this->dispatch_404();
+        }
+        $this->dispatch($this->route_current);
     }
 
     private function fine_route(Request $request)
@@ -56,10 +65,13 @@ class Router
     private function run_middleware()
     {
         $middles = $this->route_current['middleware'];
-        foreach ($middles as $middle) {
-            $middle = new $middle;
-            $middle->handle();
+
+        foreach ($middles as $middle_class) {
+            $middle_object = new $middle_class;
+            $middle_object->handle();
         }
+        $middle_object = new  GlobalMiddleware;
+        $middle_object->handle();
     }
 
     private function dispatch_404()
@@ -97,11 +109,5 @@ class Router
 
 
 
-    public function run()
-    {
-        if (is_null($this->route_current)) {
-            $this->dispatch_404();
-        }
-        $this->dispatch($this->route_current);
-    }
+
 }

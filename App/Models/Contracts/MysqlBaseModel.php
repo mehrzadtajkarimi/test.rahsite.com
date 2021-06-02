@@ -58,7 +58,7 @@ class  MysqlBaseModel extends BaseModel
 
     public function get($columns, array $where = null): array
     {
-        // start pagination
+        // start pagination ***to  url -> ?page=1
         $page = (isset($_GET['page']) && is_numeric($_GET['page'])) ? $_GET['page'] : 1;
         $start = ($page - 1) * $this->pageSize;
         $where['LIMIT'] = [$start, $this->pageSize];
