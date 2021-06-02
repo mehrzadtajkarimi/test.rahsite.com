@@ -36,7 +36,7 @@ class Router
     {
         foreach ($this->routes as  $route) {
             if (!in_array($request->method(), $route['method'])) {
-                return false;
+               continue;
             }
             if ($this->regex_matched($route)) {
                 return $route;
