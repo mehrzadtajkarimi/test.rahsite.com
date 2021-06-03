@@ -18,4 +18,4 @@ use App\Middleware\Gate;
 
 
 Route::get('/','HomeController@index');
-Route::get('/pp/{slug}','HomeController@index');
+Route::get('/articlesCategorize','HomeController@index');

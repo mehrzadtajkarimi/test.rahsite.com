@@ -2,7 +2,7 @@
 
 namespace App\Models\Contracts;
 
-interface CRUD
+interface CrudInterface
 {
     public function create(array $data): int;
     public function find($id): object;

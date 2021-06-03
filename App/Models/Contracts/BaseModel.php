@@ -2,7 +2,7 @@
 
 namespace App\Models\Contracts;
 
-abstract class  BaseModel implements CRUD
+abstract class  BaseModel implements CrudInterface
 {
 
     protected $connection;
