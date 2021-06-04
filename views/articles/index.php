@@ -1,16 +1,6 @@
-<?php
-$article_fetchAll = $data['article_fetchAll'];
-$article_fetch = $data['article_fetch'];
-$articlesCategorize = $data['articlesCategorize'];
-$mostView = $data['mostView'];
-$newArticle = $data['newArticle'];
-$commentParameterName = $data['commentParameterName'];
-$commentParameterScores = $data['commentParameterScores'];
-$commentCount = $data['commentCount'];
-?>
 <div id="article" class="container mt-5">
     <div class="row">
-        <?php foreach ($article_fetchAll as $row) { ?>
+        <?php foreach ($articles as $row) { ?>
         <article class="content col-lg-8 pt-3">
             <header>
                 <div class="header-main">
@@ -28,7 +18,7 @@ $commentCount = $data['commentCount'];
                         <?= $row['short_description']; ?>
                     </h2>
                     <div class="card-img text-center">
-                        <img src="<?= asset_url() ?>/public/image/<?= $row['image_small']; ?>" alt="<?= $row['image_small']; ?>"
+                        <img src="<?= asset_url() ?>/assets/image/<?= $row['image_small']; ?>" alt="<?= $row['image_small']; ?>"
                             class="img-fluid">
                     </div>
                     <div class="card-body">
@@ -44,22 +34,3 @@ $commentCount = $data['commentCount'];
     </div>
     <?php require('comment.php'); ?>
 </div>
-<script type="text/javascript">
-$("#nav-tab a").click(function() {
-    $("#nav-tabContent .tab-pane").stop().fadeOut(0);
-
-    var index = $(this).index();
-    var section_selected = $("#nav-tabContent .tab-pane").eq(index);
-
-    var url =
-        '<?= site_url() ?>/article/tab/<?= $article_fetch['id']; ?>/<?= $article_fetch['id_articles_category']; ?>';
-    var data = {
-        'number': index
-    };
-
-    $.post(url, data, function(msg) {
-        section_selected.html(msg);
-    });
-    section_selected.fadeIn(200);
-});
-</script>

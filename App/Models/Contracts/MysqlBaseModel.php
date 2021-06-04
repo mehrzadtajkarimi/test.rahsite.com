@@ -6,7 +6,7 @@ use Medoo\Medoo;
 
 class  MysqlBaseModel extends BaseModel
 {
-    function __construct($id)
+    function __construct($id=null)
     {
         try {
             $this->connection = new Medoo([

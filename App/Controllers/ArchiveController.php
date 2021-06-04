@@ -2,21 +2,23 @@
 namespace App\Controllers;
 
 use App\Controllers\Contracts\Controller;
+use App\Models\Archive;
 
 class ArchiveController extends Controller {
+    private $articles;
 
-    function __construct() {
-
+    public function __construct() {
+        $this->articles = new Archive();
     }
 
+
     function index() {
-        $result = $this->model;
-        $articles = $this->model->articles();
+
         $data = [
-            'result' => $result,
-            'articles' => $articles
+            'articles' => $this->articles->all(),
+
         ];
-        $this->view('articlesCategorize/index', $data);
+        view('archive.index');
     }
 
     function tab() {
