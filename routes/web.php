@@ -18,4 +18,6 @@ use App\Middleware\Gate;
 
 
 Route::get('/','HomeController@index');
-Route::get('/articlesCategorize','HomeController@index');
+Route::get('/archive','ArchiveController@index');
+Route::get('/article','ArticleController@index');
+Route::get('/Portfolio','PortfolioController@index');
