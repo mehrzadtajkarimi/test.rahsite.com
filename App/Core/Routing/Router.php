@@ -27,6 +27,7 @@ class Router
     public function run()
     {
         if (is_null($this->route_current)) {
+
             $this->dispatch_404();
         }
         $this->dispatch($this->route_current);
@@ -36,7 +37,7 @@ class Router
     {
         foreach ($this->routes as  $route) {
             if (!in_array($request->method(), $route['method'])) {
-               continue;
+                continue;
             }
             if ($this->regex_matched($route)) {
                 return $route;
@@ -47,16 +48,18 @@ class Router
     private function regex_matched($route)
     {
         global $request;
-
+        // explode pattern '/^\/post\/(?<slog>[-%\w]+)$/'
         $pattern = "/^" . str_replace(['/', '{', '}'], ['\/', '(?<', '>[-%\w]+)'], $route['uri']) . "$/";
         $result = preg_match($pattern, $this->request->uri(), $matches);
+
         if (!$result) {
             return false;
         }
 
+        // send key value use { global $request } from controller
         foreach ($matches as $key => $value) {
             if (!is_int($key)) {
-                $request->add_rout_param($key, $value);
+                $request->set_param($key, $value);
             }
         }
         return true;
@@ -84,6 +87,7 @@ class Router
     private function dispatch($route)
     {
         $action = $route['action'];
+
         if (is_null($action) || empty($action)) {
             return;
         }
@@ -106,8 +110,4 @@ class Router
             return $controller->{$method_name}();
         }
     }
-
-
-
-
 }

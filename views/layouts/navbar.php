@@ -5,15 +5,13 @@
 
             <ul class="nav flex-column flex-lg-row menu mr-lg-5 mt-lg-2 mb-lg-2 ">
                 <li class="nav-item active d-lg-block ">
-                    <a class="nav-link cursor-pointer" href="index.php"><i class="fas fa-home d-lg-none"></i> خانه
+                    <a class="nav-link cursor-pointer" href="<?php site_url() ?>"><i class="fas fa-home d-lg-none"></i> خانه
                         <span class="sr-only ">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item  d-lg-block ">
-                    <a class="nav-link cursor-pointer"><i class="fab fa-creative-commons-sampling d-lg-none"></i>
-                        نمونه
-                        کار
-                        های من </a>
+                    <a class="nav-link cursor-pointer" href="<?= site_url() ?>portfolio"><i class="fab fa-creative-commons-sampling d-lg-none"></i>
+                        نمونه کارهای من </a>
                 </li>
                 <li class="nav-item  d-lg-block ">
                     <a class="nav-link cursor-pointer" href="<?= site_url() ?>archive"><i class="far fa-edit d-lg-none"></i> نوشته های

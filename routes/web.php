@@ -17,8 +17,13 @@ use App\Middleware\Gate;
 
 
 
+Route::get('/post/{ddd}/ss/{id}','HomeController@index');
 Route::get('/','HomeController@index');
+
 Route::get('/archive','ArchiveController@index');
-Route::post('/archive/tab','ArchiveController@tab');
-Route::get('/article','ArticleController@index');
+Route::post('/archive/{id}','ArchiveController@single');
+
 Route::get('/Portfolio','PortfolioController@index');
+Route::post('/Portfolio/{id}','PortfolioController@single');
+
+Route::get('/article','ArticleController@index');

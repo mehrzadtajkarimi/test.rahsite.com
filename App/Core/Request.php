@@ -19,18 +19,15 @@ class Request
         $this->agent = $_SERVER['HTTP_USER_AGENT'];
         $this->uri = strtok($_SERVER['REQUEST_URI'], '?');
     }
-    public function add_rout_param($key, $value)
+    public function set_param($key, $value)
     {
-       $this->rout_params[$key]=$value;
+        $this->rout_params[$key] = $value;
     }
-    public function get_rout_param($key)
+    public function get_param($key = null)
     {
-      return $this->rout_params[$key]??null;
+        return is_null($key) ? $this->rout_params : $this->rout_params[$key];
     }
-    public function get_rout_params()
-    {
-      return $this->rout_params;
-    }
+
 
     public  function params()
     {
